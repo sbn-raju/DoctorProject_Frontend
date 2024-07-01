@@ -11,7 +11,6 @@ import {
 } from "./pages/Easy Imports/Admin Dashboard Imports/admin.js";
 import {
   UserLogin,
-  UserRegister,
 } from "./pages/Easy Imports/Auth Imports/auth.js";
 import {
   AboutPage,
