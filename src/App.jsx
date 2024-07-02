@@ -44,14 +44,14 @@ function App() {
       <Routes>
         {/* Routing for the main pages like Home, Services and etc. All this are the Public Routes*/}
         <Route path="/" element={<MainLayout />}>
-          <Route path="" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/term" element={<TermsAndConditionPage />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/login" element={<UserLogin />} />
-          <Route path="/diet" element={<DietPage />} />
-          <Route path="/class" element={<ClassPage />} />
-          <Route path="/appointment" element={<AppointmentPage />} />
+          <Route index element={<HomePage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="term" element={<TermsAndConditionPage />} />
+          <Route path="services" element={<ServicesPage />} />
+          <Route path="login" element={<UserLogin />} />
+          <Route path="diet" element={<DietPage />} />
+          <Route path="class" element={<ClassPage />} />
+          <Route path="appointment" element={<AppointmentPage />} />
         </Route>
 
         {/* Routing for the user dash Boards pages like Profile and payments and etc. */}
