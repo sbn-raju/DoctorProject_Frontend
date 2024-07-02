@@ -1,8 +1,8 @@
 import React from 'react'
-import HeaderHome from '../../components/Header/HeaderHome'
+import HeaderHome from '../components/Header/HeaderHome'
 import { Outlet } from 'react-router-dom'
-import Footer from '../../components/Footer/Footer'
-import Sidebar from "../../components/Admin Components/Admin Sidebar/Sidebar";
+import Footer from '../components/Footer/Footer'
+import Sidebar from "../components/Admin Components/Admin Sidebar/Sidebar";
 
 const Admin_Layout = () => {
   return (
