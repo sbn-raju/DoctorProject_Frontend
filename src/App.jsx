@@ -22,7 +22,7 @@ import {
   ClassPage,
 } from "./pages/Easy Imports/Main Imports/main.js";
 import MainLayout from "./layouts/MainLayout.jsx";
-import Admin_Layout from "./layout/Admin_Layout.jsx";
+import Admin_Layout from "./layouts/Admin_Layout.jsx";
 import User_layout from "./layouts/User_Layout.jsx";
 import Doctor_Layout from "./layouts/Doctor_Layout.jsx";
 import {
