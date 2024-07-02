@@ -3,7 +3,7 @@ export const navItems = [
     {label:"Services",href:"/services"},
     {label:"Appointment",href:"/appointment"},
     {label:"Workshop", href:"/class"},
-    {label:"About\u00A0Us",href:"/about"},
+    {label:"AboutUs",href:"/about"},
 ]
 
 

@@ -21,10 +21,10 @@ import {
   DietPage,
   ClassPage,
 } from "./pages/Easy Imports/Main Imports/main.js";
-import MainLayout from "./layouts/Main Layout/MainLayout.jsx";
-import Admin_Layout from "./layouts/Admin Dashboard/Admin_Layout.jsx";
-import User_layout from "./layouts/User Dashboard/User_Layout.jsx";
-import Doctor_Layout from "./layouts/Doctor Dashboard/Doctor_Layout.jsx";
+import MainLayout from "./layouts/MainLayout.jsx";
+import Admin_Layout from "./layout/Admin_Layout.jsx";
+import User_layout from "./layouts/User_Layout.jsx";
+import Doctor_Layout from "./layouts/Doctor_Layout.jsx";
 import {
   MyAppointmentsPage,
   MyProfilePage,
@@ -45,13 +45,13 @@ function App() {
         {/* Routing for the main pages like Home, Services and etc. All this are the Public Routes*/}
         <Route path="/" element={<MainLayout />}>
           <Route path="" element={<HomePage />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="term" element={<TermsAndConditionPage />} />
-          <Route path="services" element={<ServicesPage />} />
-          <Route path="login" element={<UserLogin />} />
-          <Route path="diet" element={<DietPage />} />
-          <Route path="class" element={<ClassPage />} />
-          <Route path="appointment" element={<AppointmentPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/term" element={<TermsAndConditionPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/login" element={<UserLogin />} />
+          <Route path="/diet" element={<DietPage />} />
+          <Route path="/class" element={<ClassPage />} />
+          <Route path="/appointment" element={<AppointmentPage />} />
         </Route>
 
         {/* Routing for the user dash Boards pages like Profile and payments and etc. */}
