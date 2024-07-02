@@ -37,6 +37,7 @@ import DoctorLogin from "./pages/Auth Pages/Doctor Auth/DoctorLogin.jsx";
 import DoctorAppointments from "./pages/Doctor Dashboard Pages/DoctorAppointments.jsx";
 import ProtectedRoute from "./routes/Protected Route/ProtectedRoute.jsx";
 
+
 //EVERY ONE USE APP FOR TESTING YOUR COMPONENT
 function App() {
   return (
@@ -56,7 +57,6 @@ function App() {
 
         {/* Routing for the user dash Boards pages like Profile and payments and etc. */}
         {/* This are the protected Routes */}
-
         <Route
           path="/user"
           element={
@@ -70,9 +70,6 @@ function App() {
           <Route path="payment" element={<MyPaymentsPage />} />
           <Route path="class" element={<MyClassesPage />} />
         </Route>
-
-
-
 
         {/* This are the Private Routes only the admin can access this routes and the their can be the multiple admin */}
         <Route path="/admin" element={<Admin_Layout />}>
