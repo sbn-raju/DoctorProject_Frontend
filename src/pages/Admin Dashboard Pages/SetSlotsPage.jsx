@@ -3,6 +3,7 @@ import { BsCalendar2Event } from "react-icons/bs";
 import Input from "../../components/Input Fields/Input";
 import CommonButton from '../../components/Buttons/CommonButton';
 import { useForm } from 'react-hook-form';
+import { doctorNames } from '../../constants';
 
 const SetSlotsPage = () => {
   const { register, handleSubmit } = useForm();
@@ -59,22 +60,29 @@ const SetSlotsPage = () => {
               {...register("setEndTime", { required: true })}
             />
 
-            <Input
-              label="Assignee doctor"
-              type="text"
-              placeholder="Docter ID"
-              className="border-[1px] border-gray-2 w-full"
-              {...register("assignDoc", { required: true })}
-            />
+            <span>
+              <label htmlFor='doctor' className='text-sm self-start mt-1'>Choose the Doctor *</label>
+              <select
+                id="doctor"
+                defaultValue="selectDoctor"
+                className="border-[1px] border-green-800 w-full md:w-11/12 h-10 rounded-[5px] mb-[4px]"
+                {...register("setDoctor", { required: true })}
+              >
+                  <option value="selectDoctor" disabled hidden>Select your doctor</option>
+                  {doctorNames.map((d, i) => (
+                    <option key={i} value={d.name}>{d.name}</option>
+                  ))}
+              </select>
+            </span>
 
-            <div className='flex justify-center md:justify-end self-center'>
+            <div className='flex items-center justify-center md:justify-end self-center'>
               <CommonButton type='submit' className='bg-green-4 text-white rounded-xl p-2 w-24'>Submit</CommonButton>
             </div>
           </div>
         </form>
       </div>
 
-      <div className='bg-white shadow-md p-4 rounded-2xl'>
+      <div className='bg-white shadow-md p-4 rounded-2xl w-full'>
         <p className='my-2 font-medium text-lg'>Instructions:</p>
         <p className='my-2 text-sm'>Your privacy is important to us. We guarantee that your username and personal information will be kept confidential and will not be shared with any third parties. Feel safe knowing your data is secure.</p>
       </div>

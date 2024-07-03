@@ -4,9 +4,8 @@ import intlTelInput from "intl-tel-input";
 import "intl-tel-input/build/css/intlTelInput.css";
 import "intl-tel-input/build/js/utils.js";
 
-const PhoneInput = () => {
+const PhoneInput = ({id, setPhoneNumber}) => {
   const inputRef = useRef(null);
-  const [phoneNumber, setPhoneNumber] = useState("");
 
   const internationalTelNumbersObject = {
     initialCountry: "in",
@@ -57,7 +56,7 @@ const PhoneInput = () => {
     <>
       <label htmlFor="phone">Phone Number</label>
       <input
-        id="phone"
+        id={id}
         ref={inputRef}
         type="tel"
         onInput={(e) => {setPhoneNumber(e.target.value) 

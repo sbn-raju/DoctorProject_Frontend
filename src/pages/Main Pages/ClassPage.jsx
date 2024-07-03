@@ -91,7 +91,7 @@ const ClassPage = () => {
       </div>
 
       <div className="my-8 text-center p-6">
-        <p className="text-lg text-green-700 font-semibold">
+        <p className="text-[48px] text-[#194D2E] font-semibold">
           21 రోజుల ప్రకృతే వైద్యుడు వర్కషాప్ 22th May 2024 నుంచి ప్రారంభం
         </p>
       </div>
@@ -146,7 +146,7 @@ const ClassPage = () => {
                 label="Name *"
                 type="text"
                 placeholder="Enter your name here"
-                className="border-[1px] border-green-700 w-[300px] my-2 md:my-0"
+                className="border-[1px] border-green-700 w-[400px] my-2 md:my-0"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
@@ -156,7 +156,7 @@ const ClassPage = () => {
                 label="Email *"
                 type="email"
                 placeholder="Enter your email here"
-                className="border-[1px] border-green-700 w-[300px] my-2 md:my-0"
+                className="border-[1px] border-green-700 w-[400px] my-2 md:my-0"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
@@ -168,7 +168,7 @@ const ClassPage = () => {
                 label="Whatsapp number *"
                 type="text"
                 placeholder="Whatsapp Number only"
-                className="border-[1px] border-green-700 w-[300px] my-2 md:my-0"
+                className="border-[1px] border-green-700 w-[400px] my-2 md:my-0"
                 name="whatsapp"
                 value={formData.whatsapp}
                 onChange={handleChange}
@@ -178,7 +178,7 @@ const ClassPage = () => {
                 label="City (Optional)"
                 type="text"
                 placeholder="Enter your city here"
-                className="border-[1px] border-green-700 w-[300px] my-2 md:my-0"
+                className="border-[1px] border-green-700 w-[400px] my-2 md:my-0"
                 name="city"
                 value={formData.city}
                 onChange={handleChange}
@@ -186,8 +186,8 @@ const ClassPage = () => {
             </div>
           </div>
 
-          <div className="p-6 mt-6">
-            <p className="font-medium mb-2">
+          <div className="p-6 mt-6 pl-44 pr-44">
+            <p className="font-medium mb-2 flex">
               గమనిక: You will get updates on your WhatsApp number. పైన మీ వాట్సాప్
               ఫోన్ నంబరు సరిగ్గా ఎంటర్ చేయకపోతే ట్రైనింగ్ లో పాల్గొనలేరు.
             </p>

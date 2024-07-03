@@ -21,6 +21,15 @@ export default {
       width: {
         'cw-1': '96%',
         'cw-2': '80%',
+      },
+      fontFamily: {
+        gurajadaRegular: ['Gurajada-Regular'],
+        suravaramRegular: ["Suravaram-Regular"],
+        leagueSpartanRegular: ["LeagueSpartan-Regular"],
+        leagueSpartanSemiBold: ["LeagueSpartan-SemiBold"],
+        leagueSpartanMedium: ["LeagueSpartan-Medium"],
+        leagueSpartanLight: ["LeagueSpartan-Light"],
+        tenaliRamaKrishnaRegular: ["TenaliRamakrishna-Regular"],
       }
     },
   },

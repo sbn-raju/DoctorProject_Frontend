@@ -47,10 +47,10 @@ const HomePage = () => {
         {/* Introduction Sections of the Home Page Section-01 */}
         <div className="w-full flex flex-col md:flex-row justify-center p-10 mt-4 md:my-6 lg:-mt-20">   
           <div className="w-full md:w-3/5 flex flex-col justify-center items-start text-left">
-            <h2 className="text-green-4 font-bold text-2xl md:text-4xl mb-4">
-              Naturopathy <span>అనగా</span>
+            <h2 className="text-green-1 font-leagueSpartanSemiBold text-[48px] md:text-4xl mb-4">
+              Naturopathy <span className="font-gurajadaRegular text-[55px]">అనగా</span>
             </h2>
-            <p className="text-sm md:text-[17px] leading-8 text-[#333333]">
+            <p className="text-[24px] md:text-[17px] leading-8 text-[#333333] font-tenaliRamaKrishnaRegular">
               ఆయుర్వేద, అలోపతి, హోమియోపతి, యునాని, సిద్ధ వైద్య విధానం మొదలగు
               వైద్య విధానాలవలే ఇది ఒక వైద్య విధానం. పంచభూతాలతో చికిత్స చేసే ఒక
               ప్రక్రియ. ఇందులో మందులు కానీ, పసర్లు కానీ, పూతలు కానీ, లేపనాలు కానీ
@@ -76,7 +76,7 @@ const HomePage = () => {
         className="w-full h-[180px] sm:h-[200px] md:h-[450px] flex items-center justify-center bg-cover bg-center -mt-36"
         style={{ backgroundImage: `url(${Introduction_Image_section_two})` }}
       >
-        <h2 className="text-white text-sm md:text-2xl font-medium md:font-semibold md:mt-20">
+        <h2 className="text-white text-sm md:text-[48px] font-gurajadaRegular md:mt-20">
           ఇల్లే వైద్యశాల - వంటగధే మందుల షాపు - అమ్మే డాక్టర్
         </h2>
       </div>
@@ -89,28 +89,28 @@ const HomePage = () => {
             <div className="flex justify-start p-8 pl-20">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-white w-cw-2 text-start">
                 <div className="w-2/3 my-4">
-                  <h2 className="text-2xl lg:text-5xl font-semibold mb-2">24</h2>
-                  <p className="text-sm lg:text-base">Years of experience.Naturopathic way.Estd. 1999</p>
+                  <h2 className="text-2xl lg:text-5xl font-leagueSpartanMedium mb-2">24</h2>
+                  <p className="text-sm lg:text-base font-leagueSpartanRegular">Years of experience.Naturopathic way.Estd. 1999</p>
                 </div>
                 <div className="w-2/3 my-4">
-                  <h2 className="text-2xl lg:text-5xl font-semibold mb-2">3 Lakhs+</h2>
-                  <p className="text-sm lg:text-base">Patients consulted personally at Prakruti Ashram. Still counting…</p>
+                  <h2 className="text-2xl lg:text-5xl font-leagueSpartanMedium mb-2">3 Lakhs+</h2>
+                  <p className="text-sm lg:text-base font-leagueSpartanRegular">Patients consulted personally at Prakruti Ashram. Still counting…</p>
                 </div>
                 <div className="w-2/3 my-4">
-                  <h2 className="text-2xl lg:text-5xl font-semibold mb-2">20</h2>
-                  <p className="text-sm lg:text-base">Yoga Studios across the states of Andhra Pradesh and Telangana.</p>
+                  <h2 className="text-2xl lg:text-5xl font-leagueSpartanMedium mb-2">20</h2>
+                  <p className="text-sm lg:text-base font-leagueSpartanRegular">Yoga Studios across the states of Andhra Pradesh and Telangana.</p>
                 </div>
                 <div className="w-2/3 my-4">
-                  <h2 className="text-2xl lg:text-5xl font-semibold mb-2">1000+</h2>
-                  <p className="text-sm lg:text-base">Health awareness camps.</p>
+                  <h2 className="text-2xl lg:text-5xl font-leagueSpartanMedium mb-2">1000+</h2>
+                  <p className="text-sm lg:text-base font-leagueSpartanRegular">Health awareness camps.</p>
                 </div>
                 <div className="w-2/3 my-4">
-                  <h2 className="text-2xl lg:text-5xl font-semibold mb-2">Millions</h2>
-                  <p className="text-sm lg:text-base">Of health seekers transformed from revolutionary speeches.</p>
+                  <h2 className="text-2xl lg:text-5xl font-leagueSpartanMedium mb-2">Millions</h2>
+                  <p className="text-sm lg:text-base font-leagueSpartanRegular">Of health seekers transformed from revolutionary speeches.</p>
                 </div>
                 <div className="w-2/3 my-4">
-                  <h2 className="text-2xl lg:text-5xl font-semibold mb-2">Many</h2>
-                  <p className="text-sm lg:text-base">Popular TV shows, YouTube videos, Food festivals, Yoga competitions, Student seminars and so on.</p>
+                  <h2 className="text-2xl lg:text-5xl font-leagueSpartanMedium mb-2">Many</h2>
+                  <p className="text-sm lg:text-base font-leagueSpartanRegular">Popular TV shows, YouTube videos, Food festivals, Yoga competitions, Student seminars and so on.</p>
                 </div>
               </div>
             </div>
@@ -124,30 +124,30 @@ const HomePage = () => {
               <img src={docImg} className="w-48 rounded-3xl"/>
             </div>
             <div className="w-full text-white mt-10">
-              <div className="grid grid-cols-1">
+              <div className="grid grid-cols-2">
                 <div className="w-3/4 m-4">
-                  <h2 className="text-lg font-medium mb-2">24</h2>
-                  <p className="text-base">Years of experience.<br/>Naturopathic way.Estd. 1999</p>
+                  <h2 className="text-lg font-[18px] mb-2 font-leagueSpartanMedium">24</h2>
+                  <p className="text-base font-[18px] font-leagueSpartanRegular">Years of experience.<br/>Naturopathic way.Estd. 1999</p>
                 </div>
                 <div className="w-3/4 m-4 text-right">
-                  <h2 className="text-lg font-medium mb-2">3 Lakhs+</h2>
-                  <p className="text-base">Patients consulted personally at Prakruti Ashram. Still counting…</p>
+                  <h2 className="text-lg font-[18px] mb-2 font-leagueSpartanMedium">3 Lakhs+</h2>
+                  <p className="text-base font-[18px] font-leagueSpartanRegular">Patients consulted personally at Prakruti Ashram. Still counting…</p>
                 </div>
                 <div className="w-3/4 m-4">
-                  <h2 className="text-lg font-medium mb-2">20</h2>
-                  <p className="text-base">Yoga Studios across the states of Andhra Pradesh and Telangana.</p>
+                  <h2 className="text-lg font-[18px] mb-2 font-leagueSpartanMedium">20</h2>
+                  <p className="text-base font-[18px] font-leagueSpartanRegular">Yoga Studios across the states of Andhra Pradesh and Telangana.</p>
                 </div>
                 <div className="w-3/4 m-4 text-right">
-                  <h2 className="text-lg font-medium mb-2">1000+</h2>
-                  <p className="text-base">Health awareness camps.</p>
+                  <h2 className="text-lg font-[18px] mb-2 font-leagueSpartanMedium">1000+</h2>
+                  <p className="text-base font-[18px] font-leagueSpartanRegular">Health awareness camps.</p>
                 </div>
                 <div className="w-3/4 m-4">
-                  <h2 className="text-lg font-medium mb-2">Millions</h2>
-                  <p className="text-base">Of health seekers transformed from revolutionary speeches.</p>
+                  <h2 className="text-lg font-[18px] mb-2 font-leagueSpartanMedium">Millions</h2>
+                  <p className="text-base font-[18px] font-leagueSpartanRegular">Of health seekers transformed from revolutionary speeches.</p>
                 </div>
                 <div className="w-3/4 m-4 text-right">
-                  <h2 className="text-lg font-medium mb-2">Many</h2>
-                  <p className="text-base">Popular TV shows, YouTube videos, Food festivals, Yoga competitions, Student seminars and so on.</p>
+                  <h2 className="text-lg font-[18px] mb-2 font-leagueSpartanMedium">Many</h2>
+                  <p className="text-base font-[18px] font-leagueSpartanRegular">Popular TV shows, YouTube videos, Food festivals, Yoga competitions, Student seminars and so on.</p>
                 </div>
               </div>
             </div>
@@ -157,7 +157,7 @@ const HomePage = () => {
 
       {/* Services */}
       <div className="flex flex-col justify-center items-center my-10 mt-20">
-        <p className="text-green-3 text-2xl font-semibold">మా సేవలు</p>
+        <p className="text-green-3 text-[64px] font-gurajadaRegular">మా సేవలు</p>
         <img src={Services} className="w-4/6 hidden md:block" style={{WebkitUserDrag: "none", MozUserDrag: "none", msUserDrag: "none", userDrag: "none"}}/>
         <img src={ServicesMb} className="w-4/6 md:hidden" onDragStart={(e) => e.preventDefault()} style={{WebkitUserDrag: "none", MozUserDrag: "none", msUserDrag: "none", userDrag: "none"}}/>
       </div>
@@ -175,12 +175,12 @@ const HomePage = () => {
       <AboutUsCard />
 
       {/* Card of products and their prices */}
-      <ItemsCard />
+      {/* <ItemsCard /> */}
 
       {/* Youtube Videos */}
-      <div className="w-full mt-10 flex flex-col justify-center items-center mb-6">
+      <div className="w-full mt-72 flex flex-col justify-center items-center mb-6">
         <div>
-          <h2 className=" font-semibold text-2xl lg:font-bold lg:text-3xl text-[#34442C] mb-10">
+          <h2 className=" font-gurajadaRegular text-[64px] text-[#34442C] mb-10">
             మా కార్యకలాపాలు
           </h2>
         </div>
@@ -206,12 +206,11 @@ const HomePage = () => {
 
       {/* Ending */}
       <div
-        className="w-full min-h-[900px] flex flex-col items-center justify-start bg-cover bg-center bg-no-repeat pt-10"
-        style={{ backgroundImage: `url(${EndingBg})` }}
+        className="w-full min-h-[900px] flex flex-col justify-evenly bg-cover bg-center bg-no-repeat pt-10"
       >
-        <h2 className="text-white text-3xl font-bold mt-52">స్వస్థత గాధలు</h2>
+        <h2 className="text-black text-[64px] font-gurajadaRegular mt-52 flex justify-center">స్వస్థత గాధలు</h2>
         <div className="flex-grow flex flex-col justify-center items-center">
-          <div className="w-full flex flex-col md:flex-row justify-center items-center">
+          <div className="w-full flex flex-col md:flex-row justify-evenly items-center">
             {youtube.slice(0, 3).map((video, index) => (
               <div key={index} className="h-52 m-6">
                 <iframe

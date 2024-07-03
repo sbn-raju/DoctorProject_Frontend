@@ -1,17 +1,28 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { adminUserData } from '../../constants'
 import { IoMdPerson } from 'react-icons/io';
 import { useNavigate } from 'react-router-dom';
 
 const UserDataPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [rowsPerPage, setRowsPerPage] = useState(5);
+  const [rowsPerPage, setRowsPerPage] = useState(10);
   const navigate = useNavigate();
+  const [selectedMembers, setSelectedMembers] = useState([]);
+  const [selectedGender, setSelectedGender] = useState("All");
+  const [userDataDisplay, setUserDataDisplay] = useState(adminUserData);
 
-  const totalPages = Math.ceil(adminUserData.length / rowsPerPage);
+  useEffect(() => {
+    let sortedList = adminUserData;
+    if(selectedGender !== 'All'){
+      sortedList = sortedList.filter(i => i.Gender === selectedGender);
+    }
+    setUserDataDisplay(sortedList);
+  }, [selectedGender])
+
+  const totalPages = Math.ceil(userDataDisplay.length / rowsPerPage);
   const stIndex = (currentPage - 1) * rowsPerPage;
   const endIndex = stIndex + rowsPerPage;
-  const curradminUserData = adminUserData.slice(stIndex, endIndex);
+  const curradminUserData = userDataDisplay.slice(stIndex, endIndex);
 
   const handleRowsPerPage = (e) => {
     setRowsPerPage(parseInt(e.target.value, 10)); // converting string num to decimal from dropdown menu
@@ -31,10 +42,31 @@ const UserDataPage = () => {
   }
 
   const renderRowsPerPage = () => {
-    const opts = [5, 10, 20, 50, 100, 200, 300];
-    return opts.filter((option) => option < adminUserData.length).map((opt) => (
+    const opts = [10, 20, 50, 100, 200, 300];
+    return opts.filter((option) => option < userDataDisplay.length).map((opt) => (
       <option key={opt} value={opt}>{opt}</option>
     ))
+  }
+
+  const handleSelectAll = (e) => {
+    if (e.target.checked) {
+      setSelectedMembers(adminUserData.map(data => data.id));
+    } else {
+      setSelectedMembers([]);
+    }
+  }
+
+  const handleSelectMembers = (e, id) => {
+    if (e.target.checked) {
+      setSelectedMembers([...selectedMembers, id]);
+    } else {
+      setSelectedMembers(selectedMembers.filter(selectedId => selectedId !== id));
+    }
+  }
+
+  const handleGenders = (e) => {
+    setSelectedGender(e.target.value);
+    setCurrentPage(1);
   }
 
   return (
@@ -53,11 +85,13 @@ const UserDataPage = () => {
         </div>
 
         <div className='flex justify-end items-center'>
-          <select defaultValue="Sort" className='shadow rounded-2xl p-[6px] h-10 mx-2 md:mx-4'>
-            <option value="Sort">Sort</option>
-            <option value="Date">Date</option>
-            <option value="Time">Time</option>
-            <option value="Doctor">Doctor</option>
+          <select  
+            className='shadow rounded-2xl p-[6px] h-10 mx-2 md:mx-4'
+            onChange={handleGenders}
+            value={selectedGender}>
+            <option value="All">All</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
           </select>
         </div>
       </div>
@@ -68,6 +102,8 @@ const UserDataPage = () => {
             type="checkbox"
             id="selectAll"
             className='mx-2'
+            onChange={handleSelectAll}
+            checked={selectedMembers.length === adminUserData.length}
           />
           <label htmlFor="selectAll">Select All</label>
         </div>
@@ -92,10 +128,12 @@ const UserDataPage = () => {
               <li>City</li>
             </ul>
           </div>
-          <div className='min-w-[800px] h-[270px] overflow-auto scrollbar'>
+          <div className='min-w-[800px] h-[520px] overflow-auto scrollbar'>
             {curradminUserData.map((user, index) => (
               <div key={index} className="flex w-full bg-white p-4 px-6 md:px-8">
-                <input type="checkbox" id={index} className="mr-8"/>
+                <input type="checkbox" id={index} className="mr-8" 
+                      checked={selectedMembers.includes(user.id)}
+                      onChange={(e) => handleSelectMembers(e, user.id)}/>
                 <ul className='w-full grid grid-cols-6 text-sm'>                  
                   <li>{user.Name}</li>
                   <li>{user.PhoneNumber}</li>
@@ -121,25 +159,27 @@ const UserDataPage = () => {
               <p className="text-sm">Row Per Page: </p>
               <select value={rowsPerPage} onChange={handleRowsPerPage} className='bg-gray-200 mx-2 rounded-md'>
                 {renderRowsPerPage()}
-                <option value={adminUserData.length}>{adminUserData.length}</option>
+                <option value={userDataDisplay.length}>{userDataDisplay.length}</option>
               </select>
             </div>
             <div className='flex justify-end items-center w-2/3'>
               <button className='mx-2' onClick={handlePreviousPage} disabled={currentPage === 1}>
                 Previous
               </button>
-              <div className=''>
-                {Array.from({length: totalPages}, (_, index) => (
-                  <button
-                    key={index + 1}
-                    className={`w-6 mx-1 rounded-full ${currentPage === index + 1 ? 'bg-green-4 text-white' : 'bg-white text-black'}`}
-                    onClick={() => handlePageClick(index + 1)}
-                  >
-                  {index + 1}
-                </button>
-                ))}
+              <div className="overflow-auto whitespace-nowrap admin-scrollbar">
+                <div className=''>
+                  {Array.from({length: totalPages}, (_, index) => (
+                    <button
+                      key={index + 1}
+                      className={`w-6 mx-1 rounded-full ${currentPage === index + 1 ? 'bg-green-4 text-white' : 'bg-white text-black'}`}
+                      onClick={() => handlePageClick(index + 1)}
+                    >
+                    {index + 1}
+                  </button>
+                  ))}
+                </div>
               </div>
-              <button className='mx-2' onClick={handleNextPage} disabled={endIndex >= adminUserData.length}>
+              <button className='mx-2' onClick={handleNextPage} disabled={endIndex >= userDataDisplay.length}>
                 Next
               </button>
             </div>
@@ -154,10 +194,10 @@ const UserDataPage = () => {
 
             <select value={rowsPerPage} onChange={handleRowsPerPage} className='bg-gray-200 mx-2 rounded-md'>
               {renderRowsPerPage()}
-              <option value={adminUserData.length}>{adminUserData.length}</option>
+              <option value={userDataDisplay.length}>{userDataDisplay.length}</option>
             </select>
 
-            <button className='mx-2' onClick={handleNextPage} disabled={endIndex >= adminUserData.length}>
+            <button className='mx-2' onClick={handleNextPage} disabled={endIndex >= userDataDisplay.length}>
               Next
             </button>
           </div>

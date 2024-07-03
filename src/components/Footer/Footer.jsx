@@ -20,8 +20,8 @@
             {/* Dividing Container 1 into two section one is heading and other for logo */}
             {/* Heading Section */}
               <div className="w-full h-1/4 font-semibold text-center">
-                    <h2 className="lg:text-2xl">LET'S WORK TOGETHER</h2>
-                    <h3 className="lg:text-2xl">For diseases free world</h3>
+                    <h2 className="lg:text-2xl font-leagueSpartanMedium">LET'S WORK TOGETHER</h2>
+                    <h3 className="lg:text-2xl font-leagueSpartanMedium">For diseases free world</h3>
               </div>
 
 
@@ -43,7 +43,7 @@
           {/* First Div into further two div */}
             <div className="flex flex-row">
                 <div className="w-1/2 text-center lg:text-left">
-                  <ul children className="mb-1">
+                  <ul children className="mb-1 font-leagueSpartanMedium">
                     <li>About Us</li>
                     <li>Service</li>
                     <li>Appointment</li>
@@ -51,7 +51,7 @@
                   </ul>
                 </div>
                 <div className="w-1/2 text-center lg:text-left">
-                  <ul className=" mb-1">
+                  <ul className=" mb-1 font-leagueSpartanMedium">
                     <li>Terms &amp; Conditions</li>
                     <li>Privacy Policy</li>
                   </ul>
@@ -60,10 +60,10 @@
 
             {/* Second Div */}
             <div className="flex justify-center items-center flex-col mt-10 lg:items-start">
-                <h5 className="font-bold lg:text-left">
+                <h5 className="font-bold lg:text-left font-leagueSpartanSemiBold">
                   Address
                 </h5>
-                <p className="w-9/12 text-center font-extralight lg:text-left">
+                <p className="w-9/12 text-center font-leagueSpartanLight lg:text-left">
                   Siddhardha Yoga Vidyalayam, Siddhardha Nagar, Opp Bouddha Stupam, Nelakondapalli, Khammam, Telangana. 507160
                 </p>      
             </div>
@@ -76,13 +76,13 @@
             {/* First Section With Phone and email */}
             <div className="w-1/2 h-auto flex flex-col lg:items-start">
               <div className="text-center mt-12 lg:text-left">
-                <h5 className="font-bold">Phone</h5>
-                <p className="font-extralight"><span className="font-bold">+91 99666 66627 </span>
+                <h5 className="font-leagueSpartanMedium">Phone</h5>
+                <p className="font-leagueSpartanLight"><span className="font-leagueSpartanMedium">+91 99666 66627 </span>
                 (Call on Wed, Thu, Fri, between 9am to 5pm only)</p>
               </div>
               <div className="text-center mt-10 lg:text-left">
-                <h5 className="font-bold">Email</h5>
-                <p className="font-extralight">info@DrRamaChandra.com</p>
+                <h5 className="font-leagueSpartanMedium">Email</h5>
+                <p className="font-leagueSpartanRegular">info@DrRamaChandra.com</p>
               </div>
             </div>
             
@@ -96,7 +96,7 @@
           </div>
           </div>
           <div className="mb-5 mt-5 pt-3 flex justify-center items-center border-t-2 border-white w-full">
-             <p className="w-3/4 h-auto text-center"><span className="font-bold">Dr. PadmaRamachandra Naturopathy</span> &copy; 2024. All rights reserved. Made with Love by Collasyn.com</p>
+             <p className="w-3/4 h-auto text-center"><span className="font-bold">Dr. PadmaRamachandra Naturopathy</span> &copy; 2024. All rights reserved. Made with Love by <i><a href="https://collasyn.com/" target="_blanck">Collasyn</a></i></p>
           </div>
         </div>
       </>

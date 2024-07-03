@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutDot from '../../../assets/Page Assets/Home/AboutDot.png';
+import AboutDot from '../../../assets/Page Assets/Home/aboutDot.png';
 
 const RightCard = ({year, work}) => {
 

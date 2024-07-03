@@ -4,7 +4,7 @@ import { BsCalendar2Event } from "react-icons/bs";
 
 const PaymentsPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [rowsPerPage, setRowsPerPage] = useState(5);
+  const [rowsPerPage, setRowsPerPage] = useState(10);
 
   const totalPages = Math.ceil(adminPaymentDetails.length / rowsPerPage);
   const stIndex = (currentPage - 1) * rowsPerPage;
@@ -29,7 +29,7 @@ const PaymentsPage = () => {
   }
 
   const renderRowsPerPage = () => {
-    const opts = [5, 10, 20, 50, 100, 200, 300];
+    const opts = [10, 20, 50, 100, 200, 300];
     return opts.filter((option) => option < adminPaymentDetails.length).map((opt) => (
       <option key={opt} value={opt}>{opt}</option>
     ))
@@ -37,7 +37,7 @@ const PaymentsPage = () => {
 
   return (
     <div className='h-auto w-full bg-gray-1 flex flex-col justify-center items-center px-8'>
-      <div className='w-full flex justify-between mt-6'>
+      <div className='w-full flex justify-between'>
         <div className='flex flex-row items-center'>
           <h1 className="text-md md:text-xl lg:text-2xl">Hello <span className="font-medium">Admin!!</span></h1>
           
@@ -49,30 +49,12 @@ const PaymentsPage = () => {
             <p className="text-sm ml-1">Payments</p>
           </div>
         </div>
-
-        <div className='flex justify-end items-center'>
-          <select defaultValue="Sort" className='shadow rounded-2xl p-[6px] h-10 mx-2 md:mx-4'>
-            <option value="Sort">Sort</option>
-            <option value="Date">Date</option>
-            <option value="Time">Time</option>
-            <option value="Doctor">Doctor</option>
-          </select>
-        </div>
-      </div>
-
-      <div className='mt-6 p-3 px-8 bg-white w-full rounded-2xl shadow-md flex '>
-        <input
-          type="checkbox"
-          id="selectAll"
-          className='mx-2'
-        />
-        <label htmlFor="selectAll">Select All</label>
       </div>
 
       {adminPaymentDetails.length !== 0 ? (
         <div className='bg-white shadow-md mt-6 w-full overflow-x-auto admin-scrollbar rounded-2xl'>
           <div className='min-w-[800px] bg-white p-4 px-6 md:px-10 border-b-[1px] border-gray-2 sticky top-0 z-10'>
-            <ul className='ml-8 grid grid-cols-6 text-black font-regular text-sm'>
+            <ul className='grid grid-cols-6 text-black font-regular text-sm'>
               <li>Name</li>
               <li>Contact</li>
               <li>Date</li>
@@ -81,10 +63,9 @@ const PaymentsPage = () => {
               <li>Purpose</li>
             </ul>
           </div>
-          <div className='min-w-[800px] h-[270px] overflow-auto scrollbar'>
+          <div className='min-w-[800px] h-[520px] overflow-auto scrollbar'>
             {currPayments.map((payment, index) => (
               <div key={index} className='flex w-full bg-white p-4 px-6 md:px-8'>
-                <input type="checkbox" id={index} className="mr-8"/>
                 <ul className='w-full grid grid-cols-6 text-sm'>
                   <li>{payment.Name}</li>
                   <li>{payment.PhoneNumber}</li>
@@ -117,16 +98,18 @@ const PaymentsPage = () => {
               <button className='mx-2' onClick={handlePreviousPage} disabled={currentPage === 1}>
                 Previous
               </button>
-              <div className=''>
-                {Array.from({length: totalPages}, (_, index) => (
-                  <button
-                    key={index + 1}
-                    className={`w-6 mx-1 rounded-full ${currentPage === index + 1 ? 'bg-green-4 text-white' : 'bg-white text-black'}`}
-                    onClick={() => handlePageClick(index + 1)}
-                  >
-                  {index + 1}
-                </button>
-                ))}
+              <div className="overflow-auto whitespace-nowrap admin-scrollbar">
+                <div className=''>
+                  {Array.from({length: totalPages}, (_, index) => (
+                    <button
+                      key={index + 1}
+                      className={`w-6 mx-1 rounded-full ${currentPage === index + 1 ? 'bg-green-4 text-white' : 'bg-white text-black'}`}
+                      onClick={() => handlePageClick(index + 1)}
+                    >
+                    {index + 1}
+                  </button>
+                  ))}
+                </div>
               </div>
               <button className='mx-2' onClick={handleNextPage} disabled={endIndex >= adminPaymentDetails.length}>
                 Next

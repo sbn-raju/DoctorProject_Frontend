@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
 import { navItems } from "../../constants";
@@ -10,6 +10,45 @@ import CommonButton from "../Buttons/CommonButton";
 import PhoneInput from "../Input Fields/InternationalNumbers";
 
 const OTPCard = ({ phoneNumber, closeOTPCard }) => {
+
+  const length = 6;
+  const [otp, setotp] = useState(new Array(length).fill(""))
+  const [combinedOTP, setCombinedOTP] = useState("")
+  const inputRef = useRef([]);
+
+  useEffect(()=>{
+    if(inputRef.current[0]){
+      inputRef.current[0].focus()
+    }
+  }, [])
+  const handleChange =(index, e)=>{
+    const value = e.target.value
+    if(isNaN(value)) return;
+
+    const newOtp = [...otp];
+    newOtp[index] = value.substring(value.length-1)
+    setotp(newOtp)
+
+    setCombinedOTP(newOtp.join(""));
+    if(value && index < length-1 && inputRef.current[index+1]){
+      inputRef.current[index+1].focus()
+    }
+  }
+
+  const handleClick =()=>{
+
+  }
+
+  const handleKeyDown =(index, e)=>{
+    if(e.key==="Backspace" && !otp[index] && index>0 && inputRef.current[index-1]){
+      inputRef.current[index-1].focus()
+    }
+  }
+
+  const handleOTPSubmit =()=>{
+    console.log(combinedOTP)
+  }
+
   return (
     <div className="h-screen inset-0 fixed bg-opacity-75 w-full flex flex-col justify-center items-center">
       <div className="bg-white p-10 w-[300px] md:w-[400px] shadow-lg min-h-[200px] flex flex-col text-black">
@@ -22,17 +61,28 @@ const OTPCard = ({ phoneNumber, closeOTPCard }) => {
           </CommonButton>
         </div>
         <p>Enter 6-Digit OTP sent to your {phoneNumber}</p>
-        <div className="flex justify-evenly space-x-2">
-          {[...Array(6)].map((_, index) => (
-            <Input
+        <div className="flex justify-evenly space-x-2 mt-2">
+          {otp.map((value, index) => (
+            // <Input
+            //   key={index}
+            //   type="text"
+            //   value
+            //   maxLength="1"
+            //   className="border-[1px] border-green-800 w-8 h-8 md:w-10 md:h-10 rounded-[5px] text-center"
+            // />
+            <input 
               key={index}
               type="text"
-              maxLength="1"
+              ref={(input)=> (inputRef.current[index] = input)}
+              value={value}
+              onChange={(e)=> handleChange(index, e)}
+              onClick={()=> handleClick()}
+              onKeyDown={(e)=> handleKeyDown(index, e)}
               className="border-[1px] border-green-800 w-8 h-8 md:w-10 md:h-10 rounded-[5px] text-center"
             />
           ))}
         </div>
-        <CommonButton className="mt-4 bg-green-4 text-white px-4 py-2 rounded-xl">
+        <CommonButton className="mt-4 bg-green-4 text-white px-4 py-2 rounded-xl" onClick={handleOTPSubmit}>
         Verify
         </CommonButton> 
       </div>
@@ -43,14 +93,16 @@ const OTPCard = ({ phoneNumber, closeOTPCard }) => {
 const AccountBox = ({ closeAccount }) => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [isOTPCardOpen, setIsOTPCardOpen] = useState(false);
-  const [errorMsg, setErrorMsg] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
 
   const handleSendOTP = () => {
-    if (phoneNumber) {
+    if (phoneNumber.length === 10) {
       setIsOTPCardOpen(true);
-      setErrorMsg(false);
-    } else {
-      setErrorMsg(true);
+      setErrorMsg("");
+    } else if (phoneNumber.length > 0 && phoneNumber.length !== 10){
+      setErrorMsg("Please enter valid mobile number");
+    } else{
+      setErrorMsg("Phone number is mandatory")
     }
   };
 
@@ -61,7 +113,7 @@ const AccountBox = ({ closeAccount }) => {
 
   return (
     <>
-      <div className="h-screen bg-gray-1 inset-0 fixed bg-opacity-75 w-full flex flex-col justify-center items-center">
+      <div className="h-screen bg-black inset-0 fixed bg-opacity-75 w-full flex flex-col justify-center items-center">
         <div className="bg-white p-10 w-[300px] md:w-[400px] shadow-lg min-h-[200px] flex flex-col">
           <div className="flex justify-between mb-6">
             <h1 className="font-medium text-black">Sign In</h1>
@@ -71,8 +123,8 @@ const AccountBox = ({ closeAccount }) => {
               </svg>
             </CommonButton>
           </div>
-          <PhoneInput/>
-          <input
+          <PhoneInput id={"phoneInput"} setPhoneNumber={setPhoneNumber}/>
+          {/* <input
             type="text"
             id="phoneInput"
             className="border-[1px] border-green-4 px-4 py-2 my-3 rounded-lg text-black"
@@ -83,8 +135,8 @@ const AccountBox = ({ closeAccount }) => {
                 e.preventDefault();
               }
             }}
-          />
-          {errorMsg && <p className="text-red-500">Phone number is mandatory</p>}
+          /> */}
+          {errorMsg && <p className="text-red-500">{errorMsg}</p>}
           <CommonButton className="mt-4 bg-green-4 text-white px-4 py-2 rounded-xl" onClick={handleSendOTP}>
             Send OTP
           </CommonButton>
@@ -131,16 +183,16 @@ const HeaderHome = () => {
             <img src={logo} alt="LogoImage" className="w-12 h-12 md:w-16 md:h-16 mx-2 md:mx-4" />
           </Link>
           <div className="pl-1 ml-4 md:mr-4">
-            <h2 className="font-regular text-xs md:text-sm lg:text-lg leading-tight">
+            <h2 className="font-leagueSpartanRegular text-xl md:text-sm lg:text-lg leading-tight text-green-1">
               Dr.Padma &amp; Dr.Ramachandra
             </h2>
-            <p className="font-regular text-xs md:text-base lg:text-lg">
+            <p className="font-leagueSpartanRegular text-xl md:text-base lg:text-lg text-green-1">
               Naturopathy
             </p>
           </div>
         </div>
         <div className="hidden md:flex flex-grow justify-center items-center space-x-4 md:space-x-6 lg:space-x-10">
-          <ul className="flex flex-row text-sm md:text-base lg:text-lg font-medium space-x-4 md:space-x-6 lg:space-x-10">
+          <ul className="flex flex-row text-sm md:text-base lg:text-lg font-leagueSpartanSemiBold space-x-4 md:space-x-6 lg:space-x-10 text-green-1">
             {navItems.map((item, index) => (
               <li key={index}>
                 <a href={item.href}>{item.label}</a>

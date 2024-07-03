@@ -3,6 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import homebg from "../../../assets/Page Assets/Home/homebg.png";
 import homebgM from '../../../assets/Page Assets/Home/homebg_m.svg';
+import homebgMedium from '../../../assets/Page Assets/Home/homebg_m_png.png'
 import '../../../styles/carousal.styles.css';
 
 const slides = [
@@ -30,8 +31,8 @@ const slides = [
 
 const Carousal = () => {
   return (
-    <div className="w-full flex justify-center items-center h-auto">
-      <div className="hidden md:block w-full my-4" style={{ fontFamily: 'Roboto, sans-serif' }}>
+    <div className="w-full flex justify-center items-center h-[626px]">
+      <div className="hidden md:block w-full" style={{ fontFamily: 'Roboto, sans-serif' }}>
         <Carousel autoPlay infiniteLoop showStatus={false} showThumbs={false}>
           {slides.map((slide, index) => (
             <div
@@ -44,10 +45,10 @@ const Carousal = () => {
             >
               <div className="flex justify-end w-full h-full p-2">
                 <div className='flex flex-col justify-center text-end'>
-                  <p className='text-[#71FF77] text-sm md:text-lg my-2'>{slide.para}</p>
-                  <h1 className='text-white text-center text-4xl md:text-7xl font-bold my-4'>{slide.title}</h1>
+                  <p className='text-[#71FF77] text-[24px] md:text-[24px] my-2 font-suravaramRegular'>{slide.para}</p>
+                  <h1 className='text-white text-center text-[128px] md:text-[100px] my-4 font-gurajadaRegular'>{slide.title}</h1>
                   <div className='flex justify-end'>
-                    <button className="my-2 w-44 py-2 bg-[#497246] text-white rounded-md font-semibold transition transform ease-in-out hover:scale-110 duration-300 shadow-lg hover:bg-[#355a34] ">
+                    <button className="my-2 w-48 py-2 bg-[#497246] text-white rounded-md font-gurajadaRegular text-[32px] transition transform ease-in-out hover:scale-110 duration-300 shadow-lg hover:bg-[#355a34] ">
                       సంప్రదించండి
                     </button>
                   </div>
@@ -59,14 +60,14 @@ const Carousal = () => {
       </div>
 
       {/* For Medium and Lower Width Devices */}
-      <div className="md:hidden w-full my-4" style={{ fontFamily: 'Roboto, sans-serif' }}>
+      <div className="md:hidden w-screen my-4" style={{ fontFamily: 'Roboto, sans-serif' }}>
         <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false}>
           {slides.map((slide, index) => (
             <div
               key={index}
               className="w-full h-[650px] rounded-xl shadow-md p-4"
               style={{
-                backgroundImage: `url(${homebgM})`,
+                backgroundImage: `url(${homebgMedium})`,
                 backgroundSize: 'cover',
               }}
             >

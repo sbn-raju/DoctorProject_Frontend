@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { userProfile } from '../../constants/index';
+import { userProfile, doctorNames } from '../../constants/index';
 import { BsFillPersonVcardFill } from "react-icons/bs";
 import CommonButton from '../../components/Buttons/CommonButton';
 import { useNavigate } from 'react-router-dom';
@@ -73,7 +73,6 @@ const MyProfilePage = () => {
           <div className="w-full border-b-[1px] border-red-1 p-4 px-6 md:px-8">
             <div className="flex">
               <span className="w-2/5 md:w-3/6 text-xs md:text-base">Name</span>
-              {/* <span className="w-3/5 md:w-3/6">{userProfile.Name}</span> */}
               <input type="text" placeholder='Enter your Name' className='text-xs md:text-base px-4 py-1 rounded-md'/>
             </div>
           </div>
@@ -88,7 +87,18 @@ const MyProfilePage = () => {
             <div className="flex">
               <span className="w-2/5 md:w-3/6 text-xs md:text-base">Gender</span>
               {/* <span className="w-3/5 md:w-3/6">{userProfile.Gender}</span> */}
-              <input type="text" placeholder='Enter your Gender' className='text-xs md:text-base px-4 py-1 rounded-md'/>
+              {/* <input type="text" placeholder='Enter your Gender' className='text-xs md:text-base px-4 py-1 rounded-md'/> */}
+              <span>
+                <select
+                  id="gender"
+                  defaultValue="selectGender"
+                  className="text-xs md:text-base px-4 py-1 rounded-md focus:border-[1px] border-black"
+                >
+                    <option value="selectGender" disabled hidden>Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+              </span>
             </div>
           </div>
           <div className="w-full border-b-[1px] border-red-1 p-4 px-6 md:px-8">

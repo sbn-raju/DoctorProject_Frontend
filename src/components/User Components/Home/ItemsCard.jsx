@@ -34,7 +34,7 @@ function ItemsCard() {
 
   return (
     <div className="w-full mt-20 flex flex-col justify-center items-center">
-      <h2 className="font-semibold text-2xl lg:font-bold lg:text-3xl text-[#5A7F53] mt-4 mb-8">
+      <h2 className="font-gurajadaRegular text-[64px] lg:font-bold lg:text-3xl text-[#5A7F53] mt-4 mb-8">
         మా స్టోర్
       </h2>
       <div className="min-w-full h-auto flex flex-col justify-center items-center mt-6 gap-4 mb-20">
@@ -42,11 +42,11 @@ function ItemsCard() {
           {items.map((item) => (
             <div key={item.id} className="w-1/5 min-w-[200px] flex flex-col items-start">
               <img src={item.imgSrc} alt={item.title} className="w-full h-48 object-cover rounded-lg mb-2 shadow-sm"/>
-              <h3 className="text-xl font-bold  text-[#34442C]">{item.title}</h3>
+              <h3 className="text-xl font-suravaramRegular  text-[#34442C]">{item.title}</h3>
               <div className="flex items-center ">
                 <span className="text-lg text-[#34442C]">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
               </div>
-              <p className="text-lg text-[#34442C]">{item.price}</p>
+              <p className="text-lg text-[#34442C] font-suravaramRegular">{item.price}</p>
             </div>
           ))}
         </div>

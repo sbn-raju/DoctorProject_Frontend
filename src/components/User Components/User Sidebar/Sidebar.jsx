@@ -95,11 +95,13 @@ const Sidebar = () => {
             )}
           </button>
         </div>
-        {isExpanded && (
+
+        {/* {isExpanded && (
           <div className="w-full flex flex-col justify-center items-center md:my-10 md:mb-5">
             <p className="font-medium">{userProfile.Name}</p>
           </div>
-        )}
+        )} */}
+
         <div className={`${isExpanded ? "block" : "hidden"} md:block`}>
           <div className="w-full flex flex-col py-4">
             {["profile", "appointment", "payment", "class"].map((item) => (
@@ -107,7 +109,7 @@ const Sidebar = () => {
                 to={`/user/${item}`}
                 key={item}
                 onClick={() => handleBtn(item)}
-                className={`hover:bg-green-3 ${isActive(item) ? "bg-green-3" : ""} transition-all duration-300 rounded-2xl cursor-pointer flex ${isExpanded ? "p-4 m-1" : "-m-[8px] md:-m-[20px] h-10 w-10 flex justify-center my-2 md:my-2"}`}
+                className={`hover:bg-green-3 ${isActive(item) ? "bg-green-3" : ""} transition-all duration-300 rounded-2xl cursor-pointer flex ${isExpanded ? "p-4 m-1" : "m-[8px] md:-m-[20px] h-10 w-10 flex justify-center my-2 md:my-4"}`}
               >
                 <span className="px-2 flex justify-center items-center text-lg">
                   {renderIcon(item)}
@@ -118,7 +120,7 @@ const Sidebar = () => {
             <Link
               to={'/'}
               onClick={() => handleBtn("signOut")}
-              className={`hover:bg-green-3 ${isActive("signOut") ? "bg-green-3" : ""} transition-all duration-300 rounded-2xl cursor-pointer flex ${isExpanded ? "p-4 m-1" : "-m-[8px] md:-m-[20px] h-10 w-10 flex justify-center my-2 md:my-2"}`}
+              className={`hover:bg-green-3 ${isActive("signOut") ? "bg-green-3" : ""} transition-all duration-300 rounded-2xl cursor-pointer flex ${isExpanded ? "p-4 m-1" : "-m-[8px] md:-m-[20px] h-10 w-10 flex justify-center my-2 md:my-4"}`}
               >
                 <span className="px-2 flex justify-center items-center text-lg">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">

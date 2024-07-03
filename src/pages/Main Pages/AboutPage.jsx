@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutImage from'../../assets/Page Assets/Home/AboutImage.png';
+import AboutImage from'../../assets/Page Assets/Home/shaketree.png';
 import { aboutLeftCardData ,aboutRightCardData, team } from '../../constants/index';
 import line from '../../assets/Page Assets/Home/aboutLine.png';
 import LeftCard from '../../components/Main Page Components/About Page Components/LeftCard';

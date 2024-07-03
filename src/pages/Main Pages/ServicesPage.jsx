@@ -12,18 +12,9 @@ const ServicesPage = () => {
       <div className="bg-white">
         <div className='p-4 md:p-20 w-full flex flex-col md:flex-row justify-around items-center'>
           <div className='w-full text-center md:w-1/2 md:text-start mb-10 md:my-0 pl-4'>
-            <h2 className="text-2xl font-bold text-green-4 mb-6">
-              మా సేవలు
-            </h2>
-            <p className='text-base md:text-lg w-full'>
-              ఆయుర్వేద, అలోపతి, హోమియోపతి, యునాని, సిద్ధ వైద్య విధానం మొదలగు
-              వైద్య విధానాలవలే ఇది ఒక వైద్య విధానం. పంచభూతాలతో చికిత్స చేసే
-              ఒక ప్రక్రియ. ఇందులో మందులు కానీ, పసర్లు కానీ, పూతలు కానీ,
-              లేపనాలు కానీ ఏమీ వుండవు. ఈ ట్రీట్మెంట్స్ మందుల్లేకుండా జబ్బులు
-              తగ్గించడానికి ఉపయోగపడతాయి. ఈ వైద్య విధానంలో ట్రీట్మెంట్స్ –
-              వాటర్ థెరపీ, ఫాస్టింగ్ థెరపీ, డైట్ థెరపీ, యోగా థెరపీ, మసాజ్
-              థెరపీ, మడ్ థెరపీ, సన్ లైట్ థెరపీ మొదలగు థెరపీలు వుంటాయి.
-            </p>
+            <h2 className="text-[64px] text-[#792F2F]">డా.రామచంద్ర’s</h2>
+            <h1 className="text-[100px] text-green-3">Service with a Smile</h1>
+            <p className="text-[24px] text-black">Discover how our natural approach to healing can bring a smile to your face and wellness to your life!</p>
           </div>
           <div className='w-full md:w-1/2 flex justify-center'>
             <img src={posterImage} className='w-[200px] md:w-[500px]' />

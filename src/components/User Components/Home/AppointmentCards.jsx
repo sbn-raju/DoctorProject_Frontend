@@ -1,25 +1,25 @@
 import React from "react";
-import Clock from "../../../assets/Page Assets/Home/Clock.png";
+import Clock from "../../../assets/Page Assets/Home/clock.png";
 
 const AppointmentCards = () => {
   return (
     <>
       <div className="hidden md:block">
-        <div className="h-[300px] my-10 w-full flex justify-center">
+        <div className="h-[400px] my-10 w-full flex justify-center">
           <div className="shadow-lg relative w-4/5 mt-20 bg-green-3 rounded-[100px] rounded-br-[400px]">
             <div className="flex justify-start p-10">
               <div className="w-3/5 text-left">
-                <p className="text-white text-2xl font-medium mb-4">
+                <p className="text-white text-[40px] font-gurajadaRegular mb-4 mt-10">
                   అపాయింట్‌మెంట్
                 </p>
-                <p className="text-white text-sm leading-6">
+                <p className="text-white text-[24px] leading-relaxed font-tenaliRamaKrishnaRegular">
                   ప్రకృతి వైద్యం మిమ్మల్ని నయం చేయడంలో సహాయపడనివ్వండి! ఇది అన్నింటికీ నివారణ కానప్పటికీ, ప్రకృతి వైద్యం మీకు ఆరోగ్యంగా మరియు సంతోషంగా ఉండేందుకు సహాయపడుతుంది.
                 </p>
               </div>
             </div>
             <img src={Clock} className="w-48 absolute -top-28 right-20"/>
             <button 
-              className="absolute right-24 bottom-10 bg-green-2 px-4 py-1 rounded-tl-full rounded-br-full shadow-md font-medium"
+              className="absolute right-24 bottom-16 bg-green-2 px-16 py-3 rounded-tl-full rounded-br-full shadow-md font-gurajadaRegular"
               onClick={() => window.open('/appointment')}>
                 సంప్రదించండి
             </button>

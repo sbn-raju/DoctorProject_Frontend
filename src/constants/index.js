@@ -1,11 +1,12 @@
 export const navItems = [
     {label:"Home", href:"/"},
-    {label:"Services",href:"/services"},
-    {label:"Appointment",href:"/appointment"},
-    {label:"Workshop", href:"/class"},
-    {label:"AboutUs",href:"/about"},
+    // {label:"About\u00A0Us",href:"/about"},
+    {label:"About",href:"/about"},
+    {label:"Service",href:"/services"},
+    {label: "Diet", href:"/"},
+    {label:"Book Appointment",href:"/appointment"},
+    {label:"Book Workshop", href:"/class"},
 ]
-
 
 export const aboutLeftCardData = [
     {
@@ -54,7 +55,6 @@ export const aboutRightCardData = [
     },
 
 ]
-
 
 export const userProfile = {
     Name: "Vishwaksena reddy",
@@ -317,121 +317,136 @@ export const aboutDetails = [
 
 export const classBookings = [
     {
-        Name: "Deepthi",
-        PhoneNumber: "9876543210",
-        Batch: "1",
-        Gender: "Female",
-        Age: "25",
-        City: "Hyderabad",
+        "id": 1,
+        "Name": "Deepthi",
+        "PhoneNumber": "9876543210",
+        "Batch": "1",
+        "Gender": "Female",
+        "Age": "25",
+        "City": "Hyderabad"
     },
     {
-        Name: "Deepthi",
-        PhoneNumber: "9876543210",
-        Batch: "1",
-        Gender: "Female",
-        Age: "25",
-        City: "Hyderabad",
+        "id": 2,
+        "Name": "Deepthi",
+        "PhoneNumber": "9876543210",
+        "Batch": "1",
+        "Gender": "Female",
+        "Age": "25",
+        "City": "Hyderabad"
     },
     {
-        Name: "Deepthi",
-        PhoneNumber: "9876543210",
-        Batch: "1",
-        Gender: "Female",
-        Age: "25",
-        City: "Hyderabad",
+        "id": 3,
+        "Name": "Deepthi",
+        "PhoneNumber": "9876543210",
+        "Batch": "1",
+        "Gender": "Female",
+        "Age": "25",
+        "City": "Hyderabad"
     },
     {
-        Name: "Deepthi",
-        PhoneNumber: "9876543210",
-        Batch: "1",
-        Gender: "Female",
-        Age: "25",
-        City: "Hyderabad",
+        "id": 4,
+        "Name": "Deepthi",
+        "PhoneNumber": "9876543210",
+        "Batch": "1",
+        "Gender": "Female",
+        "Age": "25",
+        "City": "Hyderabad"
     },
     {
-        Name: "Deepthi",
-        PhoneNumber: "9876543210",
-        Batch: "1",
-        Gender: "Female",
-        Age: "25",
-        City: "Hyderabad",
+        "id": 5,
+        "Name": "Deepthi",
+        "PhoneNumber": "9876543210",
+        "Batch": "1",
+        "Gender": "Female",
+        "Age": "25",
+        "City": "Hyderabad"
     },
     {
-        Name: "Deepthi",
-        PhoneNumber: "9876543210",
-        Batch: "1",
-        Gender: "Female",
-        Age: "25",
-        City: "Hyderabad",
+        "id": 6,
+        "Name": "Deepthi",
+        "PhoneNumber": "9876543210",
+        "Batch": "1",
+        "Gender": "Female",
+        "Age": "25",
+        "City": "Hyderabad"
     },
     {
-        Name: "Deepthi",
-        PhoneNumber: "9876543210",
-        Batch: "1",
-        Gender: "Female",
-        Age: "25",
-        City: "Hyderabad",
+        "id": 7,
+        "Name": "Deepthi",
+        "PhoneNumber": "9876543210",
+        "Batch": "1",
+        "Gender": "Female",
+        "Age": "25",
+        "City": "Hyderabad"
     },
     {
-        Name: "Deepthi",
-        PhoneNumber: "9876543210",
-        Batch: "1",
-        Gender: "Female",
-        Age: "25",
-        City: "Hyderabad",
+        "id": 8,
+        "Name": "Deepthi",
+        "PhoneNumber": "9876543210",
+        "Batch": "1",
+        "Gender": "Female",
+        "Age": "25",
+        "City": "Hyderabad"
     },
     {
-        Name: "Deepthi",
-        PhoneNumber: "9876543210",
-        Batch: "1",
-        Gender: "Female",
-        Age: "25",
-        City: "Hyderabad",
+        "id": 9,
+        "Name": "Deepthi",
+        "PhoneNumber": "9876543210",
+        "Batch": "1",
+        "Gender": "Female",
+        "Age": "25",
+        "City": "Hyderabad"
     },
     {
-        Name: "Deepthi",
-        PhoneNumber: "9876543210",
-        Batch: "1",
-        Gender: "Female",
-        Age: "25",
-        City: "Hyderabad",
+        "id": 10,
+        "Name": "Deepthi",
+        "PhoneNumber": "9876543210",
+        "Batch": "1",
+        "Gender": "Female",
+        "Age": "25",
+        "City": "Hyderabad"
     },
     {
-        Name: "Deepthi",
-        PhoneNumber: "9876543210",
-        Batch: "1",
-        Gender: "Female",
-        Age: "25",
-        City: "Hyderabad",
+        "id": 11,
+        "Name": "Deepthi",
+        "PhoneNumber": "9876543210",
+        "Batch": "1",
+        "Gender": "Female",
+        "Age": "25",
+        "City": "Hyderabad"
     },
     {
-        Name: "Deepthi",
-        PhoneNumber: "9876543210",
-        Batch: "1",
-        Gender: "Female",
-        Age: "25",
-        City: "Hyderabad",
+        "id": 12,
+        "Name": "Deepthi",
+        "PhoneNumber": "9876543210",
+        "Batch": "1",
+        "Gender": "Female",
+        "Age": "25",
+        "City": "Hyderabad"
     },
     {
-        Name: "Deepthi",
-        PhoneNumber: "9876543210",
-        Batch: "1",
-        Gender: "Female",
-        Age: "25",
-        City: "Hyderabad",
+        "id": 13,
+        "Name": "Deepthi",
+        "PhoneNumber": "9876543210",
+        "Batch": "1",
+        "Gender": "Female",
+        "Age": "25",
+        "City": "Hyderabad"
     },
     {
-        Name: "Varun",
-        PhoneNumber: "9876543210",
-        Batch: "4",
-        Gender: "Male",
-        Age: "25",
-        City: "Hyderabad",
-    },
+        "id": 14,
+        "Name": "Varun",
+        "PhoneNumber": "9876543210",
+        "Batch": "4",
+        "Gender": "Male",
+        "Age": "25",
+        "City": "Hyderabad"
+    }
 ]
 
 export const adminPaymentDetails = [
     {
+        "id": "1",
         "Name": "Vishwak",
         "PhoneNumber": "9876543210",
         "DateOfPayment": "May 21, 2024",
@@ -440,6 +455,7 @@ export const adminPaymentDetails = [
         "Purpose": "Online Class"
     },
     {
+        "id": "2",
         "Name": "Vishwak",
         "PhoneNumber": "9876543210",
         "DateOfPayment": "May 22, 2024",
@@ -448,6 +464,7 @@ export const adminPaymentDetails = [
         "Purpose": "Course Materials"
     },
     {
+        "id": "3",
         "Name": "Vishwak",
         "PhoneNumber": "9876543210",
         "DateOfPayment": "May 23, 2024",
@@ -456,6 +473,7 @@ export const adminPaymentDetails = [
         "Purpose": "Webinar"
     },
     {
+        "id": "4",
         "Name": "Vishwak",
         "PhoneNumber": "9876543211",
         "DateOfPayment": "May 24, 2024",
@@ -464,6 +482,7 @@ export const adminPaymentDetails = [
         "Purpose": "Subscription"
     },
     {
+        "id": "5",
         "Name": "Vishwak",
         "PhoneNumber": "9876543212",
         "DateOfPayment": "May 25, 2024",
@@ -472,6 +491,7 @@ export const adminPaymentDetails = [
         "Purpose": "Consultation"
     },
     {
+        "id": "6",
         "Name": "Vishwak",
         "PhoneNumber": "9876543213",
         "DateOfPayment": "May 26, 2024",
@@ -480,6 +500,7 @@ export const adminPaymentDetails = [
         "Purpose": "Online Class"
     },
     {
+        "id": "7",
         "Name": "Vishwak",
         "PhoneNumber": "9876543214",
         "DateOfPayment": "May 27, 2024",
@@ -488,6 +509,7 @@ export const adminPaymentDetails = [
         "Purpose": "E-book Purchase"
     },
     {
+        "id": "8",
         "Name": "Vishwak",
         "PhoneNumber": "9876543215",
         "DateOfPayment": "May 28, 2024",
@@ -496,6 +518,7 @@ export const adminPaymentDetails = [
         "Purpose": "Online Class"
     },
     {
+        "id": "9",
         "Name": "Vishwak",
         "PhoneNumber": "9876543216",
         "DateOfPayment": "May 29, 2024",
@@ -504,6 +527,7 @@ export const adminPaymentDetails = [
         "Purpose": "Workshop"
     },
     {
+        "id": "10",
         "Name": "Vishwak",
         "PhoneNumber": "9876543217",
         "DateOfPayment": "May 30, 2024",
@@ -512,6 +536,7 @@ export const adminPaymentDetails = [
         "Purpose": "Online Class"
     },
     {
+        "id": "11",
         "Name": "Vishwak",
         "PhoneNumber": "9876543218",
         "DateOfPayment": "May 31, 2024",
@@ -520,6 +545,7 @@ export const adminPaymentDetails = [
         "Purpose": "Tutoring Session"
     },
     {
+        "id": "12",
         "Name": "Vi",
         "PhoneNumber": "9876543210",
         "DateOfPayment": "May 21, 2024",
@@ -528,6 +554,7 @@ export const adminPaymentDetails = [
         "Purpose": "Online Class"
     },
     {
+        "id": "13",
         "Name": "Raj",
         "PhoneNumber": "9876543210",
         "DateOfPayment": "May 22, 2024",
@@ -536,6 +563,7 @@ export const adminPaymentDetails = [
         "Purpose": "Course Materials"
     },
     {
+        "id": "14",
         "Name": "Amit",
         "PhoneNumber": "9876543210",
         "DateOfPayment": "May 23, 2024",
@@ -544,6 +572,7 @@ export const adminPaymentDetails = [
         "Purpose": "Webinar"
     },
     {
+        "id": "15",
         "Name": "Priya",
         "PhoneNumber": "9876543211",
         "DateOfPayment": "May 24, 2024",
@@ -552,6 +581,7 @@ export const adminPaymentDetails = [
         "Purpose": "Subscription"
     },
     {
+        "id": "16",
         "Name": "Nina",
         "PhoneNumber": "9876543212",
         "DateOfPayment": "May 25, 2024",
@@ -560,6 +590,7 @@ export const adminPaymentDetails = [
         "Purpose": "Consultation"
     },
     {
+        "id": "17",
         "Name": "Sanjay",
         "PhoneNumber": "9876543213",
         "DateOfPayment": "May 26, 2024",
@@ -568,6 +599,7 @@ export const adminPaymentDetails = [
         "Purpose": "Online Class"
     },
     {
+        "id": "18",
         "Name": "Ananya",
         "PhoneNumber": "9876543214",
         "DateOfPayment": "May 27, 2024",
@@ -576,6 +608,7 @@ export const adminPaymentDetails = [
         "Purpose": "E-book Purchase"
     },
     {
+        "id": "19",
         "Name": "Rohit",
         "PhoneNumber": "9876543215",
         "DateOfPayment": "May 28, 2024",
@@ -584,6 +617,7 @@ export const adminPaymentDetails = [
         "Purpose": "Online Class"
     },
     {
+        "id": "20",
         "Name": "Arjun",
         "PhoneNumber": "9876543216",
         "DateOfPayment": "May 29, 2024",
@@ -592,6 +626,7 @@ export const adminPaymentDetails = [
         "Purpose": "Workshop"
     },
     {
+        "id": "21",
         "Name": "Maya",
         "PhoneNumber": "9876543217",
         "DateOfPayment": "May 30, 2024",
@@ -600,6 +635,7 @@ export const adminPaymentDetails = [
         "Purpose": "Online Class"
     },
     {
+        "id": "22",
         "Name": "Sia",
         "PhoneNumber": "9876543218",
         "DateOfPayment": "May 31, 2024",
@@ -608,6 +644,7 @@ export const adminPaymentDetails = [
         "Purpose": "Tutoring Session"
     },
     {
+        "id": "23",
         "Name": "Ravi",
         "PhoneNumber": "9876543219",
         "DateOfPayment": "June 1, 2024",
@@ -616,6 +653,7 @@ export const adminPaymentDetails = [
         "Purpose": "Online Class"
     },
     {
+        "id": "24",
         "Name": "Simran",
         "PhoneNumber": "9876543220",
         "DateOfPayment": "June 2, 2024",
@@ -624,6 +662,7 @@ export const adminPaymentDetails = [
         "Purpose": "Course Materials"
     },
     {
+        "id": "25",
         "Name": "Anil",
         "PhoneNumber": "9876543221",
         "DateOfPayment": "June 3, 2024",
@@ -632,6 +671,7 @@ export const adminPaymentDetails = [
         "Purpose": "Webinar"
     },
     {
+        "id": "26",
         "Name": "Karan",
         "PhoneNumber": "9876543222",
         "DateOfPayment": "June 4, 2024",
@@ -640,6 +680,7 @@ export const adminPaymentDetails = [
         "Purpose": "Subscription"
     },
     {
+        "id": "27",
         "Name": "Kriti",
         "PhoneNumber": "9876543223",
         "DateOfPayment": "June 5, 2024",
@@ -648,6 +689,7 @@ export const adminPaymentDetails = [
         "Purpose": "Consultation"
     },
     {
+        "id": "28",
         "Name": "Deepak",
         "PhoneNumber": "9876543224",
         "DateOfPayment": "June 6, 2024",
@@ -656,6 +698,7 @@ export const adminPaymentDetails = [
         "Purpose": "Online Class"
     },
     {
+        "id": "29",
         "Name": "Mohan",
         "PhoneNumber": "9876543225",
         "DateOfPayment": "June 7, 2024",
@@ -664,6 +707,7 @@ export const adminPaymentDetails = [
         "Purpose": "E-book Purchase"
     },
     {
+        "id": "30",
         "Name": "Lata",
         "PhoneNumber": "9876543226",
         "DateOfPayment": "June 8, 2024",
@@ -672,6 +716,7 @@ export const adminPaymentDetails = [
         "Purpose": "Online Class"
     },
     {
+        "id": "31",
         "Name": "Gaurav",
         "PhoneNumber": "9876543227",
         "DateOfPayment": "June 9, 2024",
@@ -680,6 +725,7 @@ export const adminPaymentDetails = [
         "Purpose": "Workshop"
     },
     {
+        "id": "32",
         "Name": "Neha",
         "PhoneNumber": "9876543228",
         "DateOfPayment": "June 10, 2024",
@@ -688,6 +734,7 @@ export const adminPaymentDetails = [
         "Purpose": "Online Class"
     },
     {
+        "id": "33",
         "Name": "Tina",
         "PhoneNumber": "9876543229",
         "DateOfPayment": "June 11, 2024",
@@ -696,6 +743,7 @@ export const adminPaymentDetails = [
         "Purpose": "Tutoring Session"
     },
     {
+        "id": "34",
         "Name": "Arjun",
         "PhoneNumber": "9876543230",
         "DateOfPayment": "June 12, 2024",
@@ -707,69 +755,77 @@ export const adminPaymentDetails = [
 
 export const adminUserData = [
     {
-        Name: "Raj Kumar",
-        PhoneNumber: "9876543210",
-        Email: "raj@123gmail.com",
-        Gender: "Male",
-        Age: "24",
-        city: "Hyderabad",
+        "id": 1,
+        "Name": "Raj Kumar",
+        "PhoneNumber": "9876543210",
+        "Email": "raj@123gmail.com",
+        "Gender": "Male",
+        "Age": "24",
+        "city": "Hyderabad"
     },
     {
-        Name: "Raj Kumar",
-        PhoneNumber: "9876543210",
-        Email: "raj@123gmail.com",
-        Gender: "Male",
-        Age: "24",
-        city: "Hyderabad",
+        "id": 2,
+        "Name": "Raj Kumar",
+        "PhoneNumber": "9876543210",
+        "Email": "raj@123gmail.com",
+        "Gender": "Male",
+        "Age": "24",
+        "city": "Hyderabad"
     },
     {
-        Name: "Raj Kumar",
-        PhoneNumber: "9876543210",
-        Email: "raj@123gmail.com",
-        Gender: "Male",
-        Age: "24",
-        city: "Hyderabad",
+        "id": 3,
+        "Name": "Raj Kumar",
+        "PhoneNumber": "9876543210",
+        "Email": "raj@123gmail.com",
+        "Gender": "Male",
+        "Age": "24",
+        "city": "Hyderabad"
     },
     {
-        Name: "Raj Kumar",
-        PhoneNumber: "9876543210",
-        Email: "raj@123gmail.com",
-        Gender: "Male",
-        Age: "24",
-        city: "Hyderabad",
+        "id": 4,
+        "Name": "Raj Kumar",
+        "PhoneNumber": "9876543210",
+        "Email": "raj@123gmail.com",
+        "Gender": "Male",
+        "Age": "24",
+        "city": "Hyderabad"
     },
     {
-        Name: "Raj Kumar",
-        PhoneNumber: "9876543210",
-        Email: "raj@123gmail.com",
-        Gender: "Male",
-        Age: "24",
-        city: "Hyderabad",
+        "id": 5,
+        "Name": "Raj Kumar",
+        "PhoneNumber": "9876543210",
+        "Email": "raj@123gmail.com",
+        "Gender": "Male",
+        "Age": "24",
+        "city": "Hyderabad"
     },
     {
-        Name: "Raj Kumar",
-        PhoneNumber: "9876543210",
-        Email: "raj@123gmail.com",
-        Gender: "Male",
-        Age: "24",
-        city: "Hyderabad",
+        "id": 6,
+        "Name": "Raj Kumar",
+        "PhoneNumber": "9876543210",
+        "Email": "raj@123gmail.com",
+        "Gender": "Male",
+        "Age": "24",
+        "city": "Hyderabad"
     },
     {
-        Name: "Raj Kumar",
-        PhoneNumber: "9876543210",
-        Email: "raj@123gmail.com",
-        Gender: "Male",
-        Age: "24",
-        city: "Hyderabad",
+        "id": 7,
+        "Name": "Raj Kumar",
+        "PhoneNumber": "9876543210",
+        "Email": "raj@123gmail.com",
+        "Gender": "Male",
+        "Age": "24",
+        "city": "Hyderabad"
     },
     {
-        Name: "Raj Kumar",
-        PhoneNumber: "9876543210",
-        Email: "raj@123gmail.com",
-        Gender: "Male",
-        Age: "24",
-        city: "Hyderabad",
-    },
+        "id": 8,
+        "Name": "Raj Kumar",
+        "PhoneNumber": "9876543210",
+        "Email": "raj@123gmail.com",
+        "Gender": "Female",
+        "Age": "24",
+        "city": "Hyderabad"
+    }
 ]
 
 export const diseasePurpose = [
@@ -833,7 +889,7 @@ export const diseasePurpose = [
     {
         purposeOfVisit: "Cognitive Function",
     },
-  ];
+];
 
 export const slotDetails = [
     {
@@ -935,7 +991,6 @@ export const slotDetails = [
 ]
 
 import img from '../assets/Page Assets/Home/doc bg.png';
-
 export const youtubeVideos = [
     {
         id: 1,
@@ -965,7 +1020,6 @@ export const youtubeVideos = [
 ]
 
 import img1 from '../assets/Page Assets/Home/family.jpeg'
-
 export const testimonialVideos = [
     {
         id: 1,
@@ -1044,7 +1098,7 @@ export const appointments = [
         "date_of_appointment": "2024-06-24",
         "time": "13:00:00",
         "purpose": "Headache",
-        "doctor": "Dr. Ramachandra",
+        "doctor": "Dr. Varun",
         "isChecked": false
     },
     {
@@ -1406,8 +1460,108 @@ export const appointments = [
         "purpose": "Flu",
         "doctor": "Dr. Varun",
         "isChecked": false
+    },
+    {
+        "id": 41,
+        "name": "Dr. Vishwak sena reddy",
+        "phone": 9030934206,
+        "date_of_appointment": "2024-06-24",
+        "time": "10:00:00",
+        "purpose": "Sinus",
+        "doctor": "Dr. Ramachandra",
+        "isChecked": true
+    },
+    {
+        "id": 42,
+        "name": "Sita",
+        "phone": 9081234567,
+        "date_of_appointment": "2024-06-24",
+        "time": "11:00:00",
+        "purpose": "Fever",
+        "doctor": "Dr. Padma",
+        "isChecked": true
+    },
+    {
+        "id": 43,
+        "name": "Ram",
+        "phone": 9123456789,
+        "date_of_appointment": "2024-06-21",
+        "time": "12:00:00",
+        "purpose": "Cough",
+        "doctor": "Dr. Ramachandra",
+        "isChecked": false
+    },
+    {
+        "id": 44,
+        "name": "Lakshmi",
+        "phone": 9176543210,
+        "date_of_appointment": "2024-06-24",
+        "time": "13:00:00",
+        "purpose": "Headache",
+        "doctor": "Dr. Varun",
+        "isChecked": false
+    },
+    {
+        "id": 45,
+        "name": "Krishna",
+        "phone": 9198765432,
+        "date_of_appointment": "2024-06-24",
+        "time": "14:00:00",
+        "purpose": "Back Pain",
+        "doctor": "Dr. Varun",
+        "isChecked": false
+    },
+    {
+        "id": 46,
+        "name": "Lakshmi",
+        "phone": 9176543210,
+        "date_of_appointment": "2024-06-25",
+        "time": "13:00:00",
+        "purpose": "Headache",
+        "doctor": "Dr. Ramachandra",
+        "isChecked": false
+    },
+    {
+        "id": 47,
+        "name": "Krishna",
+        "phone": 9198765432,
+        "date_of_appointment": "2024-06-22",
+        "time": "14:00:00",
+        "purpose": "Back Pain",
+        "doctor": "Dr. Varun",
+        "isChecked": false
+    },
+    {
+        "id": 48,
+        "name": "Arjun",
+        "phone": 9012345678,
+        "date_of_appointment": "2024-06-22",
+        "time": "09:00:00",
+        "purpose": "Cold",
+        "doctor": "Dr. Padma",
+        "isChecked": false
+    },
+    {
+        "id": 49,
+        "name": "Radha",
+        "phone": 9023456789,
+        "date_of_appointment": "2024-06-22",
+        "time": "10:30:00",
+        "purpose": "Allergy",
+        "doctor": "Dr. Ramachandra",
+        "isChecked": false
+    },
+    {
+        "id": 50,
+        "name": "Mohan",
+        "phone": 9034567890,
+        "date_of_appointment": "2024-06-22",
+        "time": "11:15:00",
+        "purpose": "Flu",
+        "doctor": "Dr. Varun",
+        "isChecked": false
     }
-];
+]
 
 export const whatsappTemplates = [
     // {
@@ -1975,9 +2129,7 @@ export const eveningJuice = [
     }
 ]
 
-
 import teamImg from '../assets/Page Assets/Home/docter image.png';
-
 export const team = [
     {
         img: teamImg,
@@ -2023,363 +2175,433 @@ export const team = [
 
 export const DoctorAppointments = [
     {
-        id: 1,
-        name: "Raju",
-        phone: 9030934206,
-        date_of_appointment: "2024-05-18",
-        time: "10:00:00",
-        purpose: "Sinus",
-        doctor: "Dr. Smith"
+        "id": 1,
+        "name": "Raju",
+        "phone": 9030934206,
+        "date_of_appointment": "2024-07-03",
+        "time": "10:00:00",
+        "purpose": "Sinus",
+        "doctor": "Dr. Smith",
+        "isChecked": true
     },
     {
-        id: 2,
-        name: "Sita",
-        phone: 9081234567,
-        date_of_appointment: "2024-05-19",
-        time: "11:00:00",
-        purpose: "Fever",
-        doctor: "Dr. Johnson"
+        "id": 2,
+        "name": "Sita",
+        "phone": 9081234567,
+        "date_of_appointment": "2024-07-04",
+        "time": "11:00:00",
+        "purpose": "Fever",
+        "doctor": "Dr. Johnson",
+        "isChecked": false
     },
     {
-        id: 3,
-        name: "Ram",
-        phone: 9123456789,
-        date_of_appointment: "2024-05-20",
-        time: "12:00:00",
-        purpose: "Cough",
-        doctor: "Dr. Brown"
+        "id": 3,
+        "name": "Ram",
+        "phone": 9123456789,
+        "date_of_appointment": "2024-05-20",
+        "time": "12:00:00",
+        "purpose": "Cough",
+        "doctor": "Dr. Brown",
+        "isChecked": false
     },
     {
-        id: 4,
-        name: "Lakshmi",
-        phone: 9176543210,
-        date_of_appointment: "2024-05-21",
-        time: "13:00:00",
-        purpose: "Headache",
-        doctor: "Dr. Davis"
+        "id": 4,
+        "name": "Lakshmi",
+        "phone": 9176543210,
+        "date_of_appointment": "2024-05-21",
+        "time": "13:00:00",
+        "purpose": "Headache",
+        "doctor": "Dr. Davis",
+        "isChecked": true
     },
     {
-        id: 5,
-        name: "Krishna",
-        phone: 9198765432,
-        date_of_appointment: "2024-05-22",
-        time: "14:00:00",
-        purpose: "Back Pain",
-        doctor: "Dr. Wilson"
+        "id": 5,
+        "name": "Krishna",
+        "phone": 9198765432,
+        "date_of_appointment": "2024-05-22",
+        "time": "14:00:00",
+        "purpose": "Back Pain",
+        "doctor": "Dr. Wilson",
+        "isChecked": true
     },
     {
-        id: 6,
-        name: "Lakshmi",
-        phone: 9176543210,
-        date_of_appointment: "2024-05-21",
-        time: "13:00:00",
-        purpose: "Headache",
-        doctor: "Dr. Davis"
+        "id": 6,
+        "name": "Lakshmi",
+        "phone": 9176543210,
+        "date_of_appointment": "2024-05-21",
+        "time": "13:00:00",
+        "purpose": "Headache",
+        "doctor": "Dr. Davis",
+        "isChecked": false
     },
     {
-        id: 7,
-        name: "Krishna",
-        phone: 9198765432,
-        date_of_appointment: "2024-05-22",
-        time: "14:00:00",
-        purpose: "Back Pain",
-        doctor: "Dr. Wilson"
+        "id": 7,
+        "name": "Krishna",
+        "phone": 9198765432,
+        "date_of_appointment": "2024-05-22",
+        "time": "14:00:00",
+        "purpose": "Back Pain",
+        "doctor": "Dr. Wilson",
+        "isChecked": false
     },
     {
-        id: 8,
-        name: "Arjun",
-        phone: 9012345678,
-        date_of_appointment: "2024-05-23",
-        time: "09:00:00",
-        purpose: "Cold",
-        doctor: "Dr. Thompson"
+        "id": 8,
+        "name": "Arjun",
+        "phone": 9012345678,
+        "date_of_appointment": "2024-05-23",
+        "time": "09:00:00",
+        "purpose": "Cold",
+        "doctor": "Dr. Thompson",
+        "isChecked": true
     },
     {
-        id: 9,
-        name: "Radha",
-        phone: 9023456789,
-        date_of_appointment: "2024-05-24",
-        time: "10:30:00",
-        purpose: "Allergy",
-        doctor: "Dr. Taylor"
+        "id": 9,
+        "name": "Radha",
+        "phone": 9023456789,
+        "date_of_appointment": "2024-05-24",
+        "time": "10:30:00",
+        "purpose": "Allergy",
+        "doctor": "Dr. Taylor",
+        "isChecked": false
     },
     {
-        id: 10,
-        name: "Mohan",
-        phone: 9034567890,
-        date_of_appointment: "2024-05-25",
-        time: "11:15:00",
-        purpose: "Flu",
-        doctor: "Dr. Anderson"
+        "id": 10,
+        "name": "Mohan",
+        "phone": 9034567890,
+        "date_of_appointment": "2024-05-25",
+        "time": "11:15:00",
+        "purpose": "Flu",
+        "doctor": "Dr. Anderson",
+        "isChecked": true
     },
     {
-        id: 11,
-        name: "Geeta",
-        phone: 9045678901,
-        date_of_appointment: "2024-05-26",
-        time: "12:45:00",
-        purpose: "Sore Throat",
-        doctor: "Dr. Martinez"
+        "id": 11,
+        "name": "Geeta",
+        "phone": 9045678901,
+        "date_of_appointment": "2024-05-26",
+        "time": "12:45:00",
+        "purpose": "Sore Throat",
+        "doctor": "Dr. Martinez",
+        "isChecked": false
     },
     {
-        id: 12,
-        name: "Vishnu",
-        phone: 9056789012,
-        date_of_appointment: "2024-05-27",
-        time: "13:30:00",
-        purpose: "Sprain",
-        doctor: "Dr. Garcia"
+        "id": 12,
+        "name": "Vishnu",
+        "phone": 9056789012,
+        "date_of_appointment": "2024-05-27",
+        "time": "13:30:00",
+        "purpose": "Sprain",
+        "doctor": "Dr. Garcia",
+        "isChecked": false
     },
     {
-        id: 13,
-        name: "Durga",
-        phone: 9067890123,
-        date_of_appointment: "2024-05-28",
-        time: "14:15:00",
-        purpose: "Migraine",
-        doctor: "Dr. Robinson"
+        "id": 13,
+        "name": "Durga",
+        "phone": 9067890123,
+        "date_of_appointment": "2024-05-28",
+        "time": "14:15:00",
+        "purpose": "Migraine",
+        "doctor": "Dr. Robinson",
+        "isChecked": true
     },
     {
-        id: 14,
-        name: "Ganesh",
-        phone: 9078901234,
-        date_of_appointment: "2024-05-29",
-        time: "15:00:00",
-        purpose: "Stomach Ache",
-        doctor: "Dr. Clark"
+        "id": 14,
+        "name": "Ganesh",
+        "phone": 9078901234,
+        "date_of_appointment": "2024-05-29",
+        "time": "15:00:00",
+        "purpose": "Stomach Ache",
+        "doctor": "Dr. Clark",
+        "isChecked": false
     },
     {
-        id: 15,
-        name: "Parvati",
-        phone: 9089012345,
-        date_of_appointment: "2024-05-30",
-        time: "15:45:00",
-        purpose: "Dizziness",
-        doctor: "Dr. Lewis"
+        "id": 15,
+        "name": "Parvati",
+        "phone": 9089012345,
+        "date_of_appointment": "2024-05-30",
+        "time": "15:45:00",
+        "purpose": "Dizziness",
+        "doctor": "Dr. Lewis",
+        "isChecked": true
     },
     {
-        id: 16,
-        name: "Kartik",
-        phone: 9090123456,
-        date_of_appointment: "2024-05-31",
-        time: "16:30:00",
-        purpose: "Fatigue",
-        doctor: "Dr. Walker"
+        "id": 16,
+        "name": "Kartik",
+        "phone": 9090123456,
+        "date_of_appointment": "2024-05-31",
+        "time": "16:30:00",
+        "purpose": "Fatigue",
+        "doctor": "Dr. Walker",
+        "isChecked": false
     },
     {
-        id: 17,
-        name: "Indra",
-        phone: 9101234567,
-        date_of_appointment: "2024-06-01",
-        time: "17:15:00",
-        purpose: "Anxiety",
-        doctor: "Dr. Hill"
+        "id": 17,
+        "name": "Indra",
+        "phone": 9101234567,
+        "date_of_appointment": "2024-06-01",
+        "time": "17:15:00",
+        "purpose": "Anxiety",
+        "doctor": "Dr. Hill",
+        "isChecked": false
     },
     {
-        id: 18,
-        name: "Saraswati",
-        phone: 9112345678,
-        date_of_appointment: "2024-06-02",
-        time: "08:00:00",
-        purpose: "Ear Infection",
-        doctor: "Dr. Scott"
+        "id": 18,
+        "name": "Saraswati",
+        "phone": 9112345678,
+        "date_of_appointment": "2024-06-02",
+        "time": "08:00:00",
+        "purpose": "Ear Infection",
+        "doctor": "Dr. Scott",
+        "isChecked": true
     },
     {
-        id: 19,
-        name: "Lakshman",
-        phone: 9123456789,
-        date_of_appointment: "2024-06-03",
-        time: "09:30:00",
-        purpose: "Eye Check-up",
-        doctor: "Dr. Green"
+        "id": 19,
+        "name": "Lakshman",
+        "phone": 9123456789,
+        "date_of_appointment": "2024-06-03",
+        "time": "09:30:00",
+        "purpose": "Eye Check-up",
+        "doctor": "Dr. Green",
+        "isChecked": false
     },
     {
-        id: 20,
-        name: "Rama",
-        phone: 9134567890,
-        date_of_appointment: "2024-06-04",
-        time: "10:45:00",
-        purpose: "Physical",
-        doctor: "Dr. Adams"
+        "id": 20,
+        "name": "Rama",
+        "phone": 9134567890,
+        "date_of_appointment": "2024-06-04",
+        "time": "10:45:00",
+        "purpose": "Physical",
+        "doctor": "Dr. Adams",
+        "isChecked": true
     },
     {
-        id: 21,
-        name: "Radhe",
-        phone: 9145678901,
-        date_of_appointment: "2024-06-05",
-        time: "11:30:00",
-        purpose: "Vaccination",
-        doctor: "Dr. Nelson"
+        "id": 21,
+        "name": "Radhe",
+        "phone": 9145678901,
+        "date_of_appointment": "2024-06-05",
+        "time": "11:30:00",
+        "purpose": "Vaccination",
+        "doctor": "Dr. Nelson",
+        "isChecked": false
     },
     {
-        id: 22,
-        name: "Shyam",
-        phone: 9156789012,
-        date_of_appointment: "2024-06-06",
-        time: "12:00:00",
-        purpose: "Chest Pain",
-        doctor: "Dr. Carter"
+        "id": 22,
+        "name": "Shyam",
+        "phone": 9156789012,
+        "date_of_appointment": "2024-06-06",
+        "time": "12:00:00",
+        "purpose": "Chest Pain",
+        "doctor": "Dr. Carter",
+        "isChecked": true
     },
     {
-        id: 23,
-        name: "Meera",
-        phone: 9167890123,
-        date_of_appointment: "2024-06-07",
-        time: "13:00:00",
-        purpose: "Foot Pain",
-        doctor: "Dr. Mitchell"
+        "id": 23,
+        "name": "Meera",
+        "phone": 9167890123,
+        "date_of_appointment": "2024-06-07",
+        "time": "13:00:00",
+        "purpose": "Foot Pain",
+        "doctor": "Dr. Mitchell",
+        "isChecked": false
     },
     {
-        id: 24,
-        name: "Narayana",
-        phone: 9178901234,
-        date_of_appointment: "2024-06-08",
-        time: "14:00:00",
-        purpose: "Rash",
-        doctor: "Dr. Perez"
+        "id": 24,
+        "name": "Narayana",
+        "phone": 9178901234,
+        "date_of_appointment": "2024-06-08",
+        "time": "14:00:00",
+        "purpose": "Rash",
+        "doctor": "Dr. Perez",
+        "isChecked": true
     },
     {
-        id: 25,
-        name: "Rukmini",
-        phone: 9189012345,
-        date_of_appointment: "2024-06-09",
-        time: "15:00:00",
-        purpose: "Joint Pain",
-        doctor: "Dr. Roberts"
+        "id": 25,
+        "name": "Rukmini",
+        "phone": 9189012345,
+        "date_of_appointment": "2024-06-09",
+        "time": "15:00:00",
+        "purpose": "Joint Pain",
+        "doctor": "Dr. Roberts",
+        "isChecked": false
     },
     {
-        id: 26,
-        name: "Hanuman",
-        phone: 9190123456,
-        date_of_appointment: "2024-06-10",
-        time: "16:00:00",
-        purpose: "Swelling",
-        doctor: "Dr. Turner"
+        "id": 26,
+        "name": "Hanuman",
+        "phone": 9190123456,
+        "date_of_appointment": "2024-06-10",
+        "time": "16:00:00",
+        "purpose": "Swelling",
+        "doctor": "Dr. Turner",
+        "isChecked": false
     },
     {
-        id: 27,
-        name: "Bharata",
-        phone: 9201234567,
-        date_of_appointment: "2024-06-11",
-        time: "17:00:00",
-        purpose: "Skin Infection",
-        doctor: "Dr. Phillips"
+        "id": 27,
+        "name": "Bharata",
+        "phone": 9201234567,
+        "date_of_appointment": "2024-06-11",
+        "time": "17:00:00",
+        "purpose": "Skin Infection",
+        "doctor": "Dr. Phillips",
+        "isChecked": true
     },
     {
-        id: 28,
-        name: "Arjun",
-        phone: 9012345678,
-        date_of_appointment: "2024-05-23",
-        time: "09:00:00",
-        purpose: "Cold",
-        doctor: "Dr. Thompson"
+        "id": 28,
+        "name": "Arjun",
+        "phone": 9012345678,
+        "date_of_appointment": "2024-05-23",
+        "time": "09:00:00",
+        "purpose": "Cold",
+        "doctor": "Dr. Thompson",
+        "isChecked": false
     },
     {
-        id: 29,
-        name: "Radha",
-        phone: 9023456789,
-        date_of_appointment: "2024-05-24",
-        time: "10:30:00",
-        purpose: "Allergy",
-        doctor: "Dr. Taylor"
+        "id": 29,
+        "name": "Radha",
+        "phone": 9023456789,
+        "date_of_appointment": "2024-05-24",
+        "time": "10:30:00",
+        "purpose": "Allergy",
+        "doctor": "Dr. Taylor",
+        "isChecked": true
     },
     {
-        id: 30,
-        name: "Mohan",
-        phone: 9034567890,
-        date_of_appointment: "2024-05-25",
-        time: "11:15:00",
-        purpose: "Flu",
-        doctor: "Dr. Anderson"
+        "id": 30,
+        "name": "Mohan",
+        "phone": 9034567890,
+        "date_of_appointment": "2024-05-25",
+        "time": "11:15:00",
+        "purpose": "Flu",
+        "doctor": "Dr. Anderson",
+        "isChecked": false
     },
     {
-        id: 31,
-        name: "Radhe",
-        phone: 9145678901,
-        date_of_appointment: "2024-06-05",
-        time: "11:30:00",
-        purpose: "Vaccination",
-        doctor: "Dr. Nelson"
+        "id": 31,
+        "name": "Radhe",
+        "phone": 9145678901,
+        "date_of_appointment": "2024-06-05",
+        "time": "11:30:00",
+        "purpose": "Vaccination",
+        "doctor": "Dr. Nelson",
+        "isChecked": true
     },
     {
-        id: 32,
-        name: "Shyam",
-        phone: 9156789012,
-        date_of_appointment: "2024-06-06",
-        time: "12:00:00",
-        purpose: "Chest Pain",
-        doctor: "Dr. Carter"
+        "id": 32,
+        "name": "Shyam",
+        "phone": 9156789012,
+        "date_of_appointment": "2024-06-06",
+        "time": "12:00:00",
+        "purpose": "Chest Pain",
+        "doctor": "Dr. Carter",
+        "isChecked": false
     },
     {
-        id: 33,
-        name: "Meera",
-        phone: 9167890123,
-        date_of_appointment: "2024-06-07",
-        time: "13:00:00",
-        purpose: "Foot Pain",
-        doctor: "Dr. Mitchell"
+        "id": 33,
+        "name": "Meera",
+        "phone": 9167890123,
+        "date_of_appointment": "2024-06-07",
+        "time": "13:00:00",
+        "purpose": "Foot Pain",
+        "doctor": "Dr. Mitchell",
+        "isChecked": true
     },
     {
-        id: 34,
-        name: "Narayana",
-        phone: 9178901234,
-        date_of_appointment: "2024-06-08",
-        time: "14:00:00",
-        purpose: "Rash",
-        doctor: "Dr. Perez"
+        "id": 34,
+        "name": "Narayana",
+        "phone": 9178901234,
+        "date_of_appointment": "2024-06-08",
+        "time": "14:00:00",
+        "purpose": "Rash",
+        "doctor": "Dr. Perez",
+        "isChecked": false
     },
     {
-        id: 35,
-        name: "Rukmini",
-        phone: 9189012345,
-        date_of_appointment: "2024-06-09",
-        time: "15:00:00",
-        purpose: "Joint Pain",
-        doctor: "Dr. Roberts"
+        "id": 35,
+        "name": "Rukmini",
+        "phone": 9189012345,
+        "date_of_appointment": "2024-06-09",
+        "time": "15:00:00",
+        "purpose": "Joint Pain",
+        "doctor": "Dr. Roberts",
+        "isChecked": true
     },
     {
-        id: 36,
-        name: "Hanuman",
-        phone: 9190123456,
-        date_of_appointment: "2024-06-10",
-        time: "16:00:00",
-        purpose: "Swelling",
-        doctor: "Dr. Turner"
+        "id": 36,
+        "name": "Hanuman",
+        "phone": 9190123456,
+        "date_of_appointment": "2024-06-10",
+        "time": "16:00:00",
+        "purpose": "Swelling",
+        "doctor": "Dr. Turner",
+        "isChecked": false
     },
     {
-        id: 37,
-        name: "Bharata",
-        phone: 9201234567,
-        date_of_appointment: "2024-06-11",
-        time: "17:00:00",
-        purpose: "Skin Infection",
-        doctor: "Dr. Phillips"
+        "id": 37,
+        "name": "Bharata",
+        "phone": 9201234567,
+        "date_of_appointment": "2024-06-11",
+        "time": "17:00:00",
+        "purpose": "Skin Infection",
+        "doctor": "Dr. Phillips",
+        "isChecked": true
     },
     {
-        id: 38,
-        name: "Arjun",
-        phone: 9012345678,
-        date_of_appointment: "2024-05-23",
-        time: "09:00:00",
-        purpose: "Cold",
-        doctor: "Dr. Thompson"
+        "id": 38,
+        "name": "Arjun",
+        "phone": 9012345678,
+        "date_of_appointment": "2024-05-23",
+        "time": "09:00:00",
+        "purpose": "Cold",
+        "doctor": "Dr. Thompson",
+        "isChecked": false
     },
     {
-        id: 39,
-        name: "Radha",
-        phone: 9023456789,
-        date_of_appointment: "2024-05-24",
-        time: "10:30:00",
-        purpose: "Allergy",
-        doctor: "Dr. Taylor"
+        "id": 39,
+        "name": "Radha",
+        "phone": 9023456789,
+        "date_of_appointment": "2024-05-24",
+        "time": "10:30:00",
+        "purpose": "Allergy",
+        "doctor": "Dr. Taylor",
+        "isChecked": true
     },
     {
-        id: 40,
-        name: "Mohan",
-        phone: 9034567890,
-        date_of_appointment: "2024-05-25",
-        time: "11:15:00",
-        purpose: "Flu",
-        doctor: "Dr. Anderson"
+        "id": 40,
+        "name": "Mohan",
+        "phone": 9034567890,
+        "date_of_appointment": "2024-05-25",
+        "time": "11:15:00",
+        "purpose": "Flu",
+        "doctor": "Dr. Anderson",
+        "isChecked": false
+    }
+]
+
+export const ongoingClassDetails = [
+    {
+        id:1,
+        startDate: "2024-06-05",
+        endDate: "2024-06-25",
+        time: "6:30 - 7:30",
     },
-];
+]
+
+export const upcomingClassDetails = [
+    {
+        id:1,
+        startDate: "2024-07-05",
+        endDate: "2024-07-25",
+        time: "6:30 - 7:30",
+    },
+    {
+        id:2,
+        startDate: "2024-08-05",
+        endDate: "2024-08-25",
+        time: "5:30 - 6:30",
+    },
+    {
+        id:3,
+        startDate: "2024-09-05",
+        endDate: "2024-09-25",
+        time: "4:00 - 6:00",
+    },
+]

@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 const CautionBox = ({handleCancel}) => {
   return (
-    <div className="h-screen fixed inset-0 bg-gray-1 bg-opacity-75 flex justify-center items-center z-[60]">
+    <div className="h-screen fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-[60]">
       <div className="w-[400px] bg-red-500 p-8 rounded-2xl shadow-lg">
         <h2 className="text-2xl mb-4 text-white">Caution</h2>
         <p className="mb-4 text-white">Are you sure to, reshedule, this may lead to bad brand publicity, try to avoid resheduling</p>
@@ -25,7 +25,7 @@ const CautionBox = ({handleCancel}) => {
 
 const AppointmentsPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [rowsPerPage, setRowsPerPage] = useState(5);
+  const [rowsPerPage, setRowsPerPage] = useState(10);
   const [isCautionBoxOpen, setIsCautionBoxOpen] = useState(false);
   const [selectedSort, setSelectedSort] = useState("All");
   const [selectedAppointmentType, setSelectedAppointmentType] = useState("Appointments");
@@ -138,13 +138,13 @@ const AppointmentsPage = () => {
   }
 
   const renderRowsPerPage = () => {
-    const opts = [5, 10, 20, 50, 100, 200, 300];
+    const opts = [10, 20, 50, 100, 200, 300];
     if (selectedAppointmentType === "Appointments") {
-      return opts.filter((option) => option < inCompleteAppointments.length).map((opt) => (
+      return opts.filter((option) => option < inCompletedSort.length).map((opt) => (
         <option key={opt} value={opt}>{opt}</option>
       ))
     } else {
-      return opts.filter((option) => option < completedAppointments.length).map((opt) => (
+      return opts.filter((option) => option < completedSort.length).map((opt) => (
         <option key={opt} value={opt}>{opt}</option>
       ))
     }
@@ -159,7 +159,7 @@ const AppointmentsPage = () => {
   }
 
   return (
-    <div className='h-auto w-full bg-gray-1 flex flex-col justify-center items-center p-8 pt-24'>
+    <div className='h-auto w-full bg-gray-1 flex flex-col justify-center items-center p-8'>
       <div className='w-full flex justify-between mt-6'>
         <div className='flex flex-row items-center'>
           <h1 className="text-md md:text-xl lg:text-2xl">Hello <span className="font-medium">Admin!!</span></h1>
@@ -235,7 +235,7 @@ const AppointmentsPage = () => {
 
       {appointments.length !==0 ? (
         <div className='bg-white shadow-md mt-6 w-full overflow-x-auto admin-scrollbar rounded-2xl'>
-          <div className='min-w-[800px] bg-white p-4 px-6 md:px-10 border-b-[1px] border-gray-2 sticky top-0 z-10'>
+          <div className='min-w-[800px] bg-white p-4 px-6 md:px-10 border-b-[1px] border-gray-2'>
             <ul className='ml-8 grid grid-cols-6 font-regular text-sm'>
               <li>Name</li>
               <li>Docter</li>
@@ -245,7 +245,7 @@ const AppointmentsPage = () => {
               <li>Purpose</li>
             </ul>
           </div>
-          <div className='min-w-[800px] h-[270px] overflow-auto scrollbar'>
+          <div className='min-w-[800px] h-[520px] overflow-auto scrollbar'>
           {selectedAppointmentType === 'Appointments' ? (
             <>
               {inCompleteDisplay.map((appointment, index) => (
@@ -300,42 +300,14 @@ const AppointmentsPage = () => {
                   <p className="text-sm">Row Per Page: </p>
                   <select value={rowsPerPage} onChange={handleRowsPerPage} className='bg-gray-200 mx-2 rounded-md'>
                     {renderRowsPerPage()}
-                    <option value={inCompleteAppointments.length}>{inCompleteAppointments.length}</option>
+                    <option value={inCompletedSort.length}>{inCompletedSort.length}</option>
                   </select>
                 </div>
                 <div className='flex justify-end items-center w-2/3'>
                   <button className='mx-2' onClick={handlePreviousPage} disabled={currentPage === 1}>
                     Previous
                   </button>
-                  <div className=''>
-                    {Array.from({length: totalPages}, (_, index) => (
-                      <button
-                        key={index + 1}
-                        className={`w-6 mx-1 rounded-full ${currentPage === index + 1 ? 'bg-green-4 text-white' : 'bg-white text-black'}`}
-                        onClick={() => handlePageClick(index + 1)}
-                      >
-                      {index + 1}
-                    </button>
-                    ))}
-                  </div>
-                  <button className='mx-2' onClick={handleNextPage} disabled={endIndex >= inCompleteAppointments.length}>
-                    Next
-                  </button>
-                </div>
-              </>
-              ) : (
-                <>
-                  <div className="flex w-1/3">
-                    <p className="text-sm">Row Per Page: </p>
-                    <select value={rowsPerPage} onChange={handleRowsPerPage} className='bg-gray-200 mx-2 rounded-md'>
-                      {renderRowsPerPage()}
-                      <option value={completedAppointments.length}>{completedAppointments.length}</option>
-                    </select>
-                  </div>
-                  <div className='flex justify-end items-center w-2/3'>
-                    <button className='mx-2' onClick={handlePreviousPage} disabled={currentPage === 1}>
-                      Previous
-                    </button>
+                  <div className="overflow-auto whitespace-nowrap admin-scrollbar">
                     <div className=''>
                       {Array.from({length: totalPages}, (_, index) => (
                         <button
@@ -347,7 +319,39 @@ const AppointmentsPage = () => {
                       </button>
                       ))}
                     </div>
-                    <button className='mx-2' onClick={handleNextPage} disabled={endIndex >= completedAppointments.length}>
+                  </div>
+                  <button className='mx-2' onClick={handleNextPage} disabled={endIndex >= inCompletedSort.length}>
+                    Next
+                  </button>
+                </div>
+              </>
+              ) : (
+                <>
+                  <div className="flex w-1/3">
+                    <p className="text-sm">Row Per Page: </p>
+                    <select value={rowsPerPage} onChange={handleRowsPerPage} className='bg-gray-200 mx-2 rounded-md'>
+                      {renderRowsPerPage()}
+                      <option value={completedSort.length}>{completedSort.length}</option>
+                    </select>
+                  </div>
+                  <div className='flex justify-end items-center w-2/3'>
+                    <button className='mx-2' onClick={handlePreviousPage} disabled={currentPage === 1}>
+                      Previous
+                    </button>
+                    <div className="overflow-auto whitespace-nowrap admin-scrollbar">
+                      <div className=''>
+                        {Array.from({length: totalPages}, (_, index) => (
+                          <button
+                            key={index + 1}
+                            className={`w-6 mx-1 rounded-full ${currentPage === index + 1 ? 'bg-green-4 text-white' : 'bg-white text-black'}`}
+                            onClick={() => handlePageClick(index + 1)}
+                          >
+                          {index + 1}
+                        </button>
+                        ))}
+                      </div>
+                    </div>
+                    <button className='mx-2' onClick={handleNextPage} disabled={endIndex >= completedSort.length}>
                       Next
                     </button>
                   </div>

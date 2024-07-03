@@ -11,6 +11,7 @@ import {
 } from "./pages/Easy Imports/Admin Dashboard Imports/admin.js";
 import {
   UserLogin,
+  UserRegister,
 } from "./pages/Easy Imports/Auth Imports/auth.js";
 import {
   AboutPage,
@@ -21,10 +22,10 @@ import {
   DietPage,
   ClassPage,
 } from "./pages/Easy Imports/Main Imports/main.js";
-import MainLayout from "./layouts/MainLayout.jsx";
-import Admin_Layout from "./layouts/Admin_Layout.jsx";
-import User_layout from "./layouts/User_Layout.jsx";
-import Doctor_Layout from "./layouts/Doctor_Layout.jsx";
+import MainLayout from "./layouts/Main Layout/MainLayout.jsx";
+import Admin_Layout from "./layouts/Admin Dashboard/Admin_Layout.jsx";
+import User_layout from "./layouts/User Dashboard/User_Layout.jsx";
+import Doctor_Layout from "./layouts/Doctor Dashboard/Doctor_Layout.jsx";
 import {
   MyAppointmentsPage,
   MyProfilePage,
@@ -37,7 +38,6 @@ import DoctorLogin from "./pages/Auth Pages/Doctor Auth/DoctorLogin.jsx";
 import DoctorAppointments from "./pages/Doctor Dashboard Pages/DoctorAppointments.jsx";
 import ProtectedRoute from "./routes/Protected Route/ProtectedRoute.jsx";
 
-
 //EVERY ONE USE APP FOR TESTING YOUR COMPONENT
 function App() {
   return (
@@ -45,7 +45,7 @@ function App() {
       <Routes>
         {/* Routing for the main pages like Home, Services and etc. All this are the Public Routes*/}
         <Route path="/" element={<MainLayout />}>
-          <Route index element={<HomePage />} />
+          <Route path="" element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="term" element={<TermsAndConditionPage />} />
           <Route path="services" element={<ServicesPage />} />
@@ -57,6 +57,7 @@ function App() {
 
         {/* Routing for the user dash Boards pages like Profile and payments and etc. */}
         {/* This are the protected Routes */}
+
         <Route
           path="/user"
           element={
@@ -70,6 +71,9 @@ function App() {
           <Route path="payment" element={<MyPaymentsPage />} />
           <Route path="class" element={<MyClassesPage />} />
         </Route>
+
+
+
 
         {/* This are the Private Routes only the admin can access this routes and the their can be the multiple admin */}
         <Route path="/admin" element={<Admin_Layout />}>
