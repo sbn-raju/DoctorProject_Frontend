@@ -1,7 +1,7 @@
 import React from 'react';
-import {aboutDot} from '../../../assets/Page Assets/Home/aboutDot.png';
+import aboutDot from '../../../assets/Page Assets/Home/aboutDot.png';
 
-const LeftCard = ({year, workaboutDot}) => {
+const LeftCard = ({year, work}) => {
 
     // This is for the date of the present year in case of the prop failure fo better error handling 
     const date = new Date();
