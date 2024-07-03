@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutDot from '../../../assets/Page Assets/Home/aboutDot.png';
+import aboutDot from '../../../assets/Page Assets/Home/aboutDot.png';
 
 const RightCard = ({year, work}) => {
 
@@ -20,7 +20,7 @@ const RightCard = ({year, work}) => {
                     <path d="M0 12.791L16.5558 24.9915V0.590545L0 12.791Z" fill="#497246"/>
                 </svg>
             </span>
-            <img src={AboutDot} className='w-10 absolute top-[30%] -left-[50px]'/>
+            <img src={aboutDot} className='w-10 absolute top-[30%] -left-[50px]'/>
         </div>
     )
 }
