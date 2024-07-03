@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import AppointmentImg from '../../assets/Page Assets/Home/appointment-img.png';
 import AppointmentBg from '../../assets/Page Assets/Home/appointment-bg.png';
-import Clock from '../../assets/Page Assets/Home/clock.png';
+import clock from '../../assets/Page Assets/Home/clock.png';
 import docter from '../../assets/Page Assets/Home/docter image.png';
 import Input from "../../components/Input Fields/Input";
 import CommonButton from '../../components/Buttons/CommonButton';
@@ -63,7 +63,7 @@ const AppointmentPage = () => {
               <div className='w-full md:w-1/2 order-3 md:order-1'>
                 <div className='p-8 bg-white rounded-[40px] shadow-lg mt-4 md:mx-5 md:mr-10'>
                   <div className='flex justify-center items-center'>
-                    <img className='w-1/2' src={Clock} alt='Clock'/>
+                    <img className='w-1/2' src={clock} alt='Clock'/>
                   </div>
                   <div className='mt-4'>
                     <p className='text-xs md:text-lg'>
@@ -220,7 +220,7 @@ export default AppointmentPage;
 // import React from 'react';
 // import AppointmentImg from '../../assets/Page Assets/Home/appointment-img.png';
 // import AppointmentBg from '../../assets/Page Assets/Home/appointment-bg.png';
-// import Clock from '../../assets/Page Assets/Home/clock.png';
+// import  from '../../assets/Page Assets/Home/.png';
 // import docter from '../../assets/Page Assets/Home/docter image.png';
 // import Input from "../../components/Input Fields/Input";
 // import CommonButton from '../../components/Buttons/CommonButton';
@@ -260,7 +260,7 @@ export default AppointmentPage;
 //               <div className='w-full md:w-1/2 order-3 md:order-1'>
 //                 <div className='p-8 bg-white rounded-[40px] shadow-lg mt-4 md:mx-5 md:mr-10'>
 //                   <div className='flex justify-center items-center'>
-//                     <img className='w-1/2' src={Clock} alt='Clock'/>
+//                     <img className='w-1/2' src={} alt=''/>
 //                   </div>
 //                   <div className='mt-4'>
 //                     <p className='text-xs md:text-lg'>
