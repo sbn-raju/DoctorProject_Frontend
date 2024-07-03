@@ -1,7 +1,7 @@
 import React from 'react';
-import AboutDot from '../../../assets/Page Assets/Home/aboutDot.png';
+import {aboutDot} from '../../../assets/Page Assets/Home/aboutDot.png';
 
-const LeftCard = ({year, work}) => {
+const LeftCard = ({year, workaboutDot}) => {
 
     // This is for the date of the present year in case of the prop failure fo better error handling 
     const date = new Date();
@@ -19,7 +19,7 @@ const LeftCard = ({year, work}) => {
                     <path d="M16.9707 12.9121L0.414856 0.711639L0.414856 25.1126L16.9707 12.9121Z" fill="#497246"/>
                 </svg>
             </span>
-            <img src={AboutDot} className='w-10 absolute top-[30%] -right-[54px]'/>
+            <img src={aboutDot} className='w-10 absolute top-[30%] -right-[54px]'/>
         </div>
     )
 }
